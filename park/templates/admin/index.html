@@ -1,0 +1,43 @@
+{% extends "admin_base.html" %}
+
+{% block title %} 首页 {% endblock %}
+
+{% block content  %}
+
+
+<h1>欢迎</h1>
+
+<div class="ui grid">
+	<div class="two column row">
+		<div class="column">
+			<div class="ui medium header" style="line-height: 38px">当日新增订单量: {{ today_video_count }}</div>
+		</div>
+		<div class="column">
+			<div class="ui medium header" style="line-height: 38px">当日新增评论量: {{ today_reply_count }}</div>
+		</div>
+		<div class="column">
+			<div class="ui medium header" style="line-height: 38px">当日新增用户量: {{ today_user_count }}</div>
+		</div>
+	</div>
+	<div class="two column row">
+		<div class="column">
+			<div class="ui medium header" style="line-height: 38px">总用户数: {{ all_user_count }}</div>
+		</div>
+		<div class="column">
+			<div class="ui medium header" style="line-height: 38px">有订单记录用户数: {{ all_uploaded_user_count }}</div>
+		</div>
+		<div class="column">
+			<div class="ui medium header" style="line-height: 38px">总订单数: {{ all_video_count }}</div>
+		</div>
+	</div>
+	<div class="two column row">
+		<div class="column">
+			<div class="ui medium header" style="line-height: 38px">昨日微信订单数: {{ yesterday_mobile_play_count }}</div>
+		</div>
+		<div class="column">
+			<div class="ui medium header" style="line-height: 38px">今日微信订单数: {{ today_mobile_play_count }}</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

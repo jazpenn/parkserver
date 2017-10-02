@@ -1,0 +1,184 @@
+#form-account {
+  padding: 3rem 8rem;
+}
+
+.log-in-out {
+  h3 {
+    font-weight: lighter;
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.8rem;
+    span {
+      display: inline-block;
+      padding: 5px 1rem;
+      background: #fff;
+      position: relative;
+      bottom: -25px;
+    }
+  }
+}
+
+.form-account {
+  margin-left: auto;
+  margin-right: auto;
+  .form-group {
+    margin-left: 0;
+    margin-right: 0;
+    input {
+      height: 4rem;
+      line-height: 4rem;
+      padding: 0 2rem;
+    }
+    &.phone-number {
+      position: relative;
+      .input-group {
+        width: 100%;
+      }
+      input {
+        padding-right: 12rem;
+        position: relative;
+        z-index: 2;
+      }
+      .input-group-addon {
+        width: 12rem;
+        height: 4rem;
+        line-height: 4rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        text-align: center;
+        z-index: 3;
+        border-left: 1px solid #ccc;
+        border-radius: 0;
+        a, span {
+          line-height: 4rem;
+        }
+        a {
+          color: #666;
+          text-decoration: none;
+          display: block;
+        }
+        span {
+          display: block;
+          color: #999;
+        }
+      }
+    }
+    .form-note {
+      margin-top: 5px;
+      font-size: 1.2rem;
+      padding-left: 2rem;
+      &-error {
+        color: #e74c3c;
+      }
+    }
+    button {
+      height: 4rem;
+      line-height: 4rem;
+      padding: 0;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 3rem;
+  a {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #666;
+    margin-right: 2rem;
+    &:hover {
+      color: #fff !important;
+    }
+    i {
+      font-size: 24px;
+      line-height: 6rem;
+    }
+    &.social-weibo {
+      border-color: #e74c3c;
+      color: #e74c3c;
+      &:hover {
+        background: #e74c3c;
+      }
+    }
+    &.social-wechat {
+      border-color: #2ecc71;
+      color: #2ecc71;
+      &:hover {
+        background: #2ecc71;
+      }
+    }
+    &.social-QQ {
+      border-color: #3498db;
+      color: #3498db;
+      margin-right: 0;
+      &:hover {
+        background: #3498db;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.form-account-add {
+  font-size: 1.6rem;
+  overflow: hidden;
+  padding-top: 1rem;
+  a {
+    color: #999;
+    &:hover {
+      color: #666;
+      text-decoration: underline;
+    }
+  }
+}
+
+#modal-login {
+  font-size: 1.6rem;
+  .modal-dialog {
+    margin-top: 9rem;
+  }
+  .modal-header {
+    padding: 0;
+    ul.nav-tabs {
+      border: none;
+      li {
+        width: 50%;
+        a {
+          border: none;
+          margin: 0;
+          padding: 0;
+          display: block;
+          text-align: center;
+          font-size: 1.8rem;
+          line-height: 6rem;
+          background: #e8e8e8;
+        }
+        &.active {
+          a {
+            border: none;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+  .modal-body {
+    padding: 3rem 6rem;
+    h3 {
+      span {
+        bottom: -16px;
+      }
+    }
+  }
+}

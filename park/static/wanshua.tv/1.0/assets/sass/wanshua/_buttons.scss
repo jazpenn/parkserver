@@ -1,0 +1,189 @@
+/* --- button --- */
+.btn {
+
+}
+
+.btn-primary {
+  background: $brand;
+  border-color: $brand;
+  color: #fff;
+  &:hover, &:active, &:focus {
+    background: $brand - #222 !important;
+    border-color: #brand - #222 !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-success {
+  background: $green;
+  border-color: $green;
+  color: #fff !important;
+  &:hover, &:active, &:focus {
+    background: $green - #222 !important;
+    border-color: #green - #222 !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-ios {
+  border-color: #5a5a5a;
+  color: #5a5a5a;
+  &:hover {
+    border-color: #4a4a4a;
+    background-color: #5a5a5a;
+    color: #fff;
+  }
+}
+
+.btn-follow, .btn-following {
+  text-align: left;
+  overflow: hidden;
+  padding: 0;
+  height: 4rem;
+  i {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    float: left;
+    text-align: center;
+    margin-right: -5rem;
+    border-right: 1px solid transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  span.text {
+    margin-left: 4rem;
+    line-height: 4rem;
+    padding: 0 2rem;
+  }
+}
+
+.btn-follow {
+  padding: 0;
+  line-height: 4rem;
+  i {
+    border-color: $green - #222;
+  }
+  &:hover {
+    i {
+      border-color: $green - #444;
+    }
+  }
+}
+
+.btn-following {
+  background: #bdc3c7;
+  border-color: #bdc3c7;
+  color: #fff !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  i {
+    border-color: #bdc3c7 - #222;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  span.following {
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  span.unfollow {
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    background: $red;
+    border-color: $red;
+    color: #fff !important;
+    box-shadow: none !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    i {
+      border-color: $red - #222;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    span.following {
+      display: none;
+    }
+    span.unfollow {
+      display: block;
+    }
+  }
+}
+
+
+
+.btn-social {
+  border-radius: 50%;
+  border-color: #5a5a5a;
+  color: #5a5a5a;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  text-align: center;
+  &:hover {
+    background: #5a5a5a;
+    color: #fff;
+    &.btn-social-weibo {
+      background: #e74c3c;
+      border-color: #e74c3c;
+      color: #fff;
+    }
+    &.btn-social-wechat {
+      background: #1abc9c;
+      border-color: #1abc9c;
+      color: #fff;
+    }
+    &.btn-social-linkedin {
+      background: #0076B7;
+      border-color: #0076B7;
+      color: #fff;
+    }
+    &.btn-social-youku {
+      background: #00A6E0;
+      border-color: #00A6E0;
+      color: #fff;
+    }
+  }
+}
+
+.btn-follow-s {
+  line-height: 2.4rem;
+  height: 2.4rem;
+  i {
+    width: 2.4rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    margin-right: -3rem;
+  }
+  span.text {
+    line-height: 2.4rem;
+    margin-left: 1.5rem;
+    padding-right: 0.8rem;
+  }
+
+}

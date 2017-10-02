@@ -1,0 +1,17 @@
+
+ul,ol{ list-style-type: none; }
+/*table{border-collapse:collapse;border-spacing:0;}*/
+table{ width: 810px; }
+th,td{ text-align: center; }
+.film_count{ font-size: 15px; padding-bottom: 5px; }
+.film_oper{ width: 70px; }
+.film_oper a{ margin-left: 5px; }
+.film_list_box{ min-height: 500px; }
+.film_pic{ position: relative; }
+.film_pic img{ width:80px; height: 80px; }
+.film_pic a{ display: none; position: absolute; top: 0; right: 0; padding: 3px; background: #ccc;}
+.pagination li{ float: left; }
+.pagination li a{ display: block; margin-left: 10px; font-size: 15px; width: 20px; height: 20px; padding: 3px; text-align: center; background: #ccc; }
+.pagination .active a{ color: #fff; background: #038de5; }
+.show_false{ font-size: 15px; color:red;}
+.show_st{ font-size: 15px; }

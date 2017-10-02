@@ -1,0 +1,23 @@
+.main-footer {
+  font-size: 1.4rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: #999;
+}
+
+.friend-links {
+  ul {
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+    li {
+      width: 33.3333%;
+      padding: 0 15px;
+      margin-bottom: 1rem;
+      float: left;
+      a {
+        display: block;
+      }
+    }
+  }
+}

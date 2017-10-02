@@ -1,0 +1,43 @@
+@media (max-width: 767px) {
+  .wrapper {
+    padding-top: 60px;
+  }
+  .page-nav {
+    margin-bottom: 0.5rem;
+  }
+  .article-list .post {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    .post-wrapper {
+      border: none;
+      .post-thumbnail {
+        /*height: 153px;*/
+      }
+    }
+  }
+  .main-content {
+    .row {
+      margin-left: 10px;
+      margin-right: 10px;
+      .video-list {
+        .video-item {
+          padding: 0 5px;
+        }
+      }
+    }
+    .content {
+      margin: 10px;
+    }
+    .sidebar {
+      display: none;
+    }
+  }
+  .friend-links {
+    ul {
+      li {
+        width: 100%;
+      }
+    }
+  }
+}

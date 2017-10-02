@@ -1,0 +1,13 @@
+@media (min-width: 992px) and ( max-width: 1199px ) {
+  .article-list .post {
+    width: 33.3333%;
+    .post-wrapper {
+      .post-thumbnail {
+        height: 154px;
+      }
+    }
+  }
+  .sidebar-wrapper.affix {
+    width: 242.5px;
+  }
+}

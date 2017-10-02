@@ -1,0 +1,36 @@
+body{
+padding: 0px;
+margin: 0px;
+background-color: #51003f;
+font-family: "微软雅黑"
+}
+
+
+.people{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.alert{
+	background-color: #d03a89;
+	color: #ffffff;
+}
+ .bg-danger{
+	background-color: #d03a89;
+	color: #ffffff;
+	padding: 7px;
+	font-size: 16px;
+
+}
+
+.dangerhead{
+	padding: 10px;
+	font-size: 30px;
+	color: #fff33f;
+}
+.caption{
+	line-height: 30px;
+}
+h3{
+	color: #d9534f;
+	font-family: "黑体";
+}

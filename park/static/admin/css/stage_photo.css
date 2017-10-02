@@ -1,0 +1,24 @@
+
+
+.stage_photo_box{
+	overflow: hidden;
+}
+.stage_photo{
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+.stage_photo, .stage_photo img{
+	width: 100px;
+}
+
+.del_but{
+	display: none;
+	position: absolute;
+	font-size: 15px;
+	font-weight: bold;
+	top: 0;
+	right: 0;
+	background: #fff;
+	color: #000;
+}

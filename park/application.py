@@ -59,6 +59,7 @@ def create_app(config=None, app_name=None):
     configure_logging(app)
     configure_500(app)
     init_redis_rank(app)
+    print(app.url_map)
 
     return app
 

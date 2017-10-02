@@ -1,0 +1,160 @@
+.video-player-banner {
+  background: #fff;
+  position: relative;
+  height: 80px;
+  .video-avatar {
+    width: 6rem;
+    height: 6rem;
+    float: left;
+    margin-right: -7rem;
+  }
+  .video-info {
+    margin-left: 7rem;
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+      line-height: 3rem;
+      span {
+        display: inline-block;
+      }
+      span.video-game {
+        font-size: 1.2rem;
+        margin-top: -5px;
+        margin-left: 2rem;
+        display: inline-block;
+        vertical-align: middle;
+        a {
+          background: $brand;
+          color: #333;
+          height: 24px;
+          line-height: 24px;
+          display: inline-block;
+          padding-right: 10px;
+          i {
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            border-right: 1px solid $brand - #111;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .video-meta {
+      .video-action {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.video-action {
+  position: inherit;
+  .video-dropdown {
+    box-shadow: none;
+  }
+}
+
+.video-content {
+  padding: 0;
+  background: #000;
+  .video-wrapper {
+    .video-inner {
+      .video-js {
+        width: 100%;
+        .vjs-big-play-button {
+          width: 6rem;
+          height: 6rem;
+          line-height: 6rem;
+          border-radius: 50%;
+          left: 50%;
+          margin-left: -3rem;
+          top: 50%;
+          margin-top: -3rem;
+        }
+      }
+    }
+    .video-actions {
+      background: #fff;
+      height: 80px;
+      padding: 10px;
+      .video-wallet, .video-gifts {
+        line-height: 60px;
+      }
+      .video-wallet {
+        .wallet-balance {
+          padding-left: 20px;
+          background-image: url('../images/wan_coin.png');
+          background-size: 16px;
+          background-repeat: no-repeat;
+          background-position: left center;
+          em {
+            font-style: normal;
+            color: RGBA(255, 194, 45, 1);
+            font-weight: bold;
+          }
+        }
+        a {
+          margin-left: 10px;
+          &:hover {
+            border-color: $brand - #111;
+            color: #000;
+          }
+        }
+      }
+      .video-gifts {
+        ul {
+          list-style: none;
+          li {
+            display: block;
+            float: left;
+            margin-left: 6px;
+            &.gift {
+              width: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.gift.dropdown {
+  &:hover {
+    .dropdown-menu {
+      display: block;
+    }
+  }
+  .dropdown-menu {
+    top: auto;
+    bottom: 70px;
+    left: auto;
+    right: 0;
+    z-index: 10000;
+    overflow: hidden;
+    padding: 10px;
+    width: 240px;
+    .gift-icon {
+      width: 50px;
+      height: 50px;
+      float: left;
+      margin-right: -60px;
+    }
+    .gift-info {
+      margin-left: 60px;
+      h4 {
+        font-size: 1.4rem;
+        span {
+          font-size: 1.2rem;
+          vertical-align: middle;
+          color: #ec3e3e;
+        }
+      }
+      p {
+        margin-top: 5px;
+        margin-bottom: 0;
+        line-height: 24px;
+      }
+    }
+  }
+}

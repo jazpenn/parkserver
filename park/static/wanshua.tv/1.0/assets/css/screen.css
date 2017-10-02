@@ -1,0 +1,3009 @@
+/*
+Theme Name: Wanshua.tv
+Theme Description: This theme is code for wanshua.tv. Based on Bootstrap, for wanshua.tv's bootstrap.
+Author: Charles Chiu
+Author Link: http://ichada.me/
+*/
+/*
+  Color Scheme
+*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* line 4, ../sass/wanshua/_reset.scss */
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* line 10, ../sass/wanshua/_reset.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* line 17, ../sass/wanshua/_reset.scss */
+body {
+  background: #E5EAED;
+  font-size: 10px;
+  min-height: 100%;
+  position: relative;
+}
+
+/* --- Form --- */
+/* line 25, ../sass/wanshua/_reset.scss */
+form, input, textarea, select, button {
+  font-size: 1.6rem;
+  outline: none;
+  outline-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 38, ../sass/wanshua/_reset.scss */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #fff inset;
+  -webkit-text-fill-color: #787878;
+  border: 1px solid #ccc;
+}
+
+/* line 44, ../sass/wanshua/_reset.scss */
+textarea {
+  resize: none;
+}
+
+/* Placeholder Style */
+/* line 49, ../sass/wanshua/_reset.scss */
+::-webkit-input-placeholder {
+  font-size: 1.4rem;
+}
+
+/* line 52, ../sass/wanshua/_reset.scss */
+::-moz-placeholder {
+  font-size: 1.4rem;
+}
+
+/* firefox 19+ */
+/* line 55, ../sass/wanshua/_reset.scss */
+:-ms-input-placeholder {
+  font-size: 1.4rem;
+}
+
+/* ie */
+/* line 58, ../sass/wanshua/_reset.scss */
+input:-moz-placeholder {
+  font-size: 1.4rem;
+}
+
+/* --- ul, ol --- */
+/* line 64, ../sass/wanshua/_reset.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 70, ../sass/wanshua/_reset.scss */
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Headings --- */
+/* line 76, ../sass/wanshua/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Links --- */
+/* line 82, ../sass/wanshua/_reset.scss */
+a:link, a:hover, a:visited, a:focus {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  outline: none;
+  color: #333;
+}
+
+/* line 94, ../sass/wanshua/_reset.scss */
+form input, form textarea, form .form-control {
+  border-radius: 0;
+}
+
+/* line 100, ../sass/wanshua/_reset.scss */
+.modal {
+  z-index: 10000 !important;
+}
+/* line 102, ../sass/wanshua/_reset.scss */
+.modal .modal-content {
+  border-radius: 0;
+}
+
+/* line 107, ../sass/wanshua/_reset.scss */
+.btn {
+  border-radius: 0 !important;
+}
+
+/* line 111, ../sass/wanshua/_reset.scss */
+.badge-success {
+  background: #1abc9c;
+  color: #fff;
+}
+
+/* line 116, ../sass/wanshua/_reset.scss */
+.badge-danger {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/*
+
+  Global Elements' Style
+
+*/
+/* line 7, ../sass/wanshua/_misc.scss */
+.avatar-badge {
+  display: block;
+  position: relative;
+}
+/* line 10, ../sass/wanshua/_misc.scss */
+.avatar-badge i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 16, ../sass/wanshua/_misc.scss */
+.avatar {
+  border-radius: 50%;
+}
+
+/*
+  Back to top
+*/
+/* line 24, ../sass/wanshua/_misc.scss */
+.back-to-top {
+  width: 32px;
+  position: fixed;
+  outline: none;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 35, ../sass/wanshua/_misc.scss */
+.back-to-top.show {
+  opacity: 0.1;
+}
+/* line 37, ../sass/wanshua/_misc.scss */
+.back-to-top.show:hover {
+  opacity: 1;
+}
+/* line 41, ../sass/wanshua/_misc.scss */
+.back-to-top a {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* line 52, ../sass/wanshua/_misc.scss */
+.back-to-top i {
+  line-height: 50px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 60, ../sass/wanshua/_misc.scss */
+.back-to-top.global-up {
+  bottom: 100px;
+  right: 100px;
+}
+
+/* --- button --- */
+/* line 6, ../sass/wanshua/_buttons.scss */
+.btn-primary {
+  background: #FFEC00;
+  border-color: #FFEC00;
+  color: #fff;
+}
+/* line 10, ../sass/wanshua/_buttons.scss */
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background: #ddca00 !important;
+  border-color: #brand-#222 !important;
+  box-shadow: none !important;
+}
+
+/* line 17, ../sass/wanshua/_buttons.scss */
+.btn-success {
+  background: #2ecc71;
+  border-color: #2ecc71;
+  color: #fff !important;
+}
+/* line 21, ../sass/wanshua/_buttons.scss */
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+  background: #0caa4f !important;
+  border-color: #green-#222 !important;
+  box-shadow: none !important;
+}
+
+/* line 28, ../sass/wanshua/_buttons.scss */
+.btn-ios {
+  border-color: #5a5a5a;
+  color: #5a5a5a;
+}
+/* line 31, ../sass/wanshua/_buttons.scss */
+.btn-ios:hover {
+  border-color: #4a4a4a;
+  background-color: #5a5a5a;
+  color: #fff;
+}
+
+/* line 38, ../sass/wanshua/_buttons.scss */
+.btn-follow, .btn-following {
+  text-align: left;
+  overflow: hidden;
+  padding: 0;
+  height: 4rem;
+}
+/* line 43, ../sass/wanshua/_buttons.scss */
+.btn-follow i, .btn-following i {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  float: left;
+  text-align: center;
+  margin-right: -5rem;
+  border-right: 1px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 57, ../sass/wanshua/_buttons.scss */
+.btn-follow span.text, .btn-following span.text {
+  margin-left: 4rem;
+  line-height: 4rem;
+  padding: 0 2rem;
+}
+
+/* line 64, ../sass/wanshua/_buttons.scss */
+.btn-follow {
+  padding: 0;
+  line-height: 4rem;
+}
+/* line 67, ../sass/wanshua/_buttons.scss */
+.btn-follow i {
+  border-color: #0caa4f;
+}
+/* line 71, ../sass/wanshua/_buttons.scss */
+.btn-follow:hover i {
+  border-color: #00882d;
+}
+
+/* line 77, ../sass/wanshua/_buttons.scss */
+.btn-following {
+  background: #bdc3c7;
+  border-color: #bdc3c7;
+  color: #fff !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 86, ../sass/wanshua/_buttons.scss */
+.btn-following i {
+  border-color: #9ba1a5;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 94, ../sass/wanshua/_buttons.scss */
+.btn-following span.following {
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 102, ../sass/wanshua/_buttons.scss */
+.btn-following span.unfollow {
+  display: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 110, ../sass/wanshua/_buttons.scss */
+.btn-following:hover {
+  background: #e74c3c;
+  border-color: #e74c3c;
+  color: #fff !important;
+  box-shadow: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 120, ../sass/wanshua/_buttons.scss */
+.btn-following:hover i {
+  border-color: #c52a1a;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 128, ../sass/wanshua/_buttons.scss */
+.btn-following:hover span.following {
+  display: none;
+}
+/* line 131, ../sass/wanshua/_buttons.scss */
+.btn-following:hover span.unfollow {
+  display: block;
+}
+
+/* line 139, ../sass/wanshua/_buttons.scss */
+.btn-social {
+  border-radius: 50%;
+  border-color: #5a5a5a;
+  color: #5a5a5a;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  text-align: center;
+}
+/* line 148, ../sass/wanshua/_buttons.scss */
+.btn-social:hover {
+  background: #5a5a5a;
+  color: #fff;
+}
+/* line 151, ../sass/wanshua/_buttons.scss */
+.btn-social:hover.btn-social-weibo {
+  background: #e74c3c;
+  border-color: #e74c3c;
+  color: #fff;
+}
+/* line 156, ../sass/wanshua/_buttons.scss */
+.btn-social:hover.btn-social-wechat {
+  background: #1abc9c;
+  border-color: #1abc9c;
+  color: #fff;
+}
+/* line 161, ../sass/wanshua/_buttons.scss */
+.btn-social:hover.btn-social-linkedin {
+  background: #0076B7;
+  border-color: #0076B7;
+  color: #fff;
+}
+/* line 166, ../sass/wanshua/_buttons.scss */
+.btn-social:hover.btn-social-youku {
+  background: #00A6E0;
+  border-color: #00A6E0;
+  color: #fff;
+}
+
+/* line 174, ../sass/wanshua/_buttons.scss */
+.btn-follow-s {
+  line-height: 2.4rem;
+  height: 2.4rem;
+}
+/* line 177, ../sass/wanshua/_buttons.scss */
+.btn-follow-s i {
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  margin-right: -3rem;
+}
+/* line 183, ../sass/wanshua/_buttons.scss */
+.btn-follow-s span.text {
+  line-height: 2.4rem;
+  margin-left: 1.5rem;
+  padding-right: 0.8rem;
+}
+
+/* line 1, ../sass/wanshua/_header.scss */
+.main-header {
+  font-size: 1.6rem;
+  position: relative;
+  z-index: 99;
+}
+/* line 5, ../sass/wanshua/_header.scss */
+.main-header .navbar {
+  background-color: #000;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+/* line 11, ../sass/wanshua/_header.scss */
+.main-header .navbar .container .navbar-brand, .main-header .navbar .container-fluid .navbar-brand {
+  background-image: url("../images/logo2.png");
+  background-size: 100%;
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -2000em;
+  width: 160px;
+  margin-top: 1.1rem;
+}
+/* line 23, ../sass/wanshua/_header.scss */
+.main-header .navbar .container-fluid .navbar-brand {
+  margin-left: 0;
+}
+/* line 27, ../sass/wanshua/_header.scss */
+.main-header .navbar .navbar-nav {
+  margin-left: 3rem;
+}
+/* line 30, ../sass/wanshua/_header.scss */
+.main-header .navbar .navbar-nav > li > a {
+  padding: 0 2.4rem;
+  line-height: 7rem;
+  color: #e8e8e8;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+/* line 36, ../sass/wanshua/_header.scss */
+.main-header .navbar .navbar-nav > li > a.user-info {
+  padding: 0 1.5rem;
+  line-height: 7rem;
+}
+/* line 40, ../sass/wanshua/_header.scss */
+.main-header .navbar .navbar-nav > li > a.user-btn {
+  padding: 0 1rem;
+  /*line-height: 40px;*/
+}
+/* line 44, ../sass/wanshua/_header.scss */
+.main-header .navbar .navbar-nav > li > a i {
+  width: 2.4rem;
+  height: 2.4rem;
+  text-align: center;
+  line-height: 2.4rem;
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+}
+/* line 55, ../sass/wanshua/_header.scss */
+.main-header .navbar .navbar-nav > li.active a {
+  background-color: transparent;
+  border-color: #FFEC00;
+}
+/* line 60, ../sass/wanshua/_header.scss */
+.main-header .navbar .navbar-nav > li.divider {
+  height: 2rem;
+  width: 0;
+  border-left: 1px solid #ccc;
+  margin-top: 2.5rem;
+}
+/* line 68, ../sass/wanshua/_header.scss */
+.main-header .navbar .navbar-form {
+  padding: 1.1rem 1.5rem;
+}
+/* line 71, ../sass/wanshua/_header.scss */
+.main-header .navbar .avatar {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+/* line 77, ../sass/wanshua/_header.scss */
+.main-header .navbar .dropdown-menu {
+  background: #000;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+}
+/* line 83, ../sass/wanshua/_header.scss */
+.main-header .navbar .dropdown-menu li a {
+  line-height: 40px;
+  color: #fff;
+}
+/* line 86, ../sass/wanshua/_header.scss */
+.main-header .navbar .dropdown-menu li a:hover {
+  background: #2b2b2b;
+}
+/* line 89, ../sass/wanshua/_header.scss */
+.main-header .navbar .dropdown-menu li a i {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin-right: 4px;
+  text-align: center;
+}
+/* line 97, ../sass/wanshua/_header.scss */
+.main-header .navbar .dropdown-menu li.divider {
+  background: #333;
+}
+
+/* line 4, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item {
+  background-color: #000;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* line 10, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 20rem black;
+  z-index: 2;
+}
+/* line 20, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content {
+  position: relative;
+  z-index: 3;
+  padding-right: 360px;
+  text-shadow: 0 0 2px #000;
+  overflow: hidden;
+}
+/* line 26, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .hero-content-wrapper {
+  float: none;
+}
+/* line 29, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .hero-details {
+  /*padding-top: 10rem;*/
+}
+/* line 32, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content a {
+  color: #fff;
+}
+/* line 35, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content h2 {
+  font-size: 4.8rem;
+}
+/* line 38, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .player-info {
+  margin: 3rem 0;
+}
+/* line 40, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .player-info .player-avatar {
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-right: -60px;
+}
+/* line 45, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .player-info .player-avatar .avatar {
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px #000;
+}
+/* line 50, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .player-info .player-meta {
+  margin-left: 60px;
+  line-height: 48px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+/* line 57, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .hero-divider {
+  overflow: hidden;
+}
+/* line 59, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .hero-divider hr {
+  width: 10%;
+  text-align: left;
+  clear: both;
+  display: inline-block;
+  margin: 0;
+  height: 0;
+  border-top: 2px solid #e8e8e8;
+}
+/* line 69, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .video-meta {
+  margin: 3rem 0;
+}
+/* line 71, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .video-meta span {
+  margin-right: 2rem;
+  line-height: 60px;
+  font-size: 2rem;
+  color: #fff;
+}
+/* line 76, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .video-meta span i {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  line-height: 60px;
+  text-align: center;
+  font-size: 2.4rem;
+  text-shadow: none;
+  margin-right: 2rem;
+}
+/* line 87, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .video-meta span i.fa-heart {
+  background: #e74c3c;
+  color: #fff;
+}
+/* line 94, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .video-btn {
+  text-shadow: none;
+}
+/* line 96, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-content .video-btn .btn-primary, .index-hero .hero-item .hero-item-content .video-btn .btn {
+  color: #333;
+}
+/* line 101, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside {
+  width: 360px;
+  float: left;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  color: #fff;
+  z-index: 4;
+}
+/* line 110, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  background: #000;
+  overflow: hidden;
+  /*opacity: 0.8;*/
+}
+/* line 118, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: top right;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  opacity: 0.5;
+  padding: 20px;
+  top: -20px;
+  left: -20px;
+}
+/* line 130, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content {
+  position: relative;
+  z-index: 5;
+  font-size: 1.6rem;
+}
+/* line 134, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info {
+  text-align: center;
+  padding-top: 3rem;
+}
+/* line 137, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-avatar {
+  margin-bottom: 3rem;
+}
+/* line 139, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-avatar .avatar {
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px #000;
+  display: inline-block;
+}
+/* line 146, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-meta h3 {
+  margin-bottom: 2rem;
+}
+/* line 149, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-meta p {
+  color: #ccc;
+}
+/* line 153, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-btn {
+  margin-top: 3rem;
+}
+/* line 155, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-btn a.btn {
+  width: 15rem;
+  font-size: 1.6rem;
+  height: 4rem;
+}
+/* line 162, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content hr {
+  margin: 3rem 0;
+}
+/* line 165, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-games {
+  /*margin-top: 2rem;*/
+}
+/* line 167, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-games h4 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+/* line 171, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-games ul {
+  list-style: none;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  overflow: hidden;
+}
+/* line 176, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-games ul li {
+  width: 33.3333%;
+  float: left;
+  padding: 1rem;
+}
+/* line 180, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-games ul li img {
+  border-radius: 10px;
+}
+/* line 183, ../sass/wanshua/_index-hero.scss */
+.index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-games ul li h5 {
+  margin-top: 1rem;
+  text-align: center;
+}
+/* line 195, ../sass/wanshua/_index-hero.scss */
+.index-hero .carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+/* line 1, ../sass/wanshua/_common.scss */
+.wrapper {
+  padding-top: 72px;
+  height: 100%;
+  overflow: scroll;
+}
+
+/* line 7, ../sass/wanshua/_common.scss */
+.content-section {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+/* line 14, ../sass/wanshua/_common.scss */
+.content-section p {
+  margin: 2rem 0;
+}
+
+/*
+  Layout
+*/
+/* line 4, ../sass/wanshua/_content.scss */
+.main-content {
+  position: relative;
+  overflow: hidden;
+}
+/* line 7, ../sass/wanshua/_content.scss */
+.main-content .content {
+  margin-right: 360px;
+}
+/* line 9, ../sass/wanshua/_content.scss */
+.main-content .content.page {
+  height: 100%;
+  overflow-y: scroll;
+}
+/* line 14, ../sass/wanshua/_content.scss */
+.main-content .sidebar {
+  width: 360px;
+  padding: 4.5rem 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  border-left: 1px solid #ccc;
+}
+
+/* line 26, ../sass/wanshua/_content.scss */
+.content h2, .sidebar h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #D2D8DC;
+}
+
+/* line 40, ../sass/wanshua/_content.scss */
+.video-list {
+  overflow: hidden;
+}
+/* line 42, ../sass/wanshua/_content.scss */
+.video-list .video-item {
+  margin-bottom: 2rem;
+}
+/* line 45, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-cover {
+  position: relative;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  width: 100%;
+}
+/* line 54, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-cover a.video-item-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-indent: -2000em;
+}
+/* line 62, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-cover span.live-sign {
+  padding: 3px 7px;
+  background: #FFEC00;
+  color: #333;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.4rem;
+}
+/* line 73, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-meta {
+  padding: 1rem 0;
+}
+/* line 75, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-meta h3 {
+  display: -webkit-box;
+  height: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 84, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-meta h3 a {
+  color: #3b3b3b;
+  font-weight: normal;
+}
+/* line 87, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-meta h3 a:hover {
+  color: #1b1b1b;
+}
+/* line 92, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-meta .video-item-player {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  line-height: 24px;
+}
+/* line 96, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-meta .video-item-player a {
+  color: #999;
+  display: -webkit-box;
+  height: 2.408rem;
+  font-size: 1.4rem;
+  line-height: 1.72;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+  margin-right: 5px;
+  max-width: 124px;
+}
+/* line 109, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-meta .video-item-player a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+/* line 114, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-meta .video-item-player img.avatar {
+  width: 24px;
+  height: 24px;
+}
+/* line 118, ../sass/wanshua/_content.scss */
+.video-list .video-item .video-item-wrapper .video-item-meta .video-item-player span.watch-count {
+  color: #999;
+}
+
+/* line 127, ../sass/wanshua/_content.scss */
+.content-none {
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #ccc;
+}
+
+/*
+  Loading
+*/
+@keyframes "spin" {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes "spin" {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-ms-keyframes "spin" {
+  from {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-o-keyframes "spin" {
+  from {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* line 201, ../sass/wanshua/_content.scss */
+.load-more-button-container {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+/* line 206, ../sass/wanshua/_content.scss */
+.load-more-button-container a {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border: 2px solid #666;
+  height: 5rem;
+  line-height: 5rem;
+  padding: 0 3rem;
+  border-radius: 0.5rem;
+  color: #666;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+/* line 220, ../sass/wanshua/_content.scss */
+.load-more-button-container a:hover, .load-more-button-container a:visited {
+  text-decoration: none;
+}
+
+/* line 224, ../sass/wanshua/_content.scss */
+.load-more-button-container a.ss-loading {
+  border-bottom: 2px solid #e4e4e4;
+  border-left: 2px solid #e4e4e4;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  display: inline-block;
+  -webkit-animation: spin .6s infinite linear;
+  -moz-animation: spin .6s infinite linear;
+  -ms-animation: spin .6s infinite linear;
+  -o-animation: spin .6s infinite linear;
+  animation: spin .6s infinite linear;
+}
+
+/* line 2, ../sass/wanshua/_sidebar.scss */
+.sidebar.is-sticky {
+  position: fixed !important;
+  top: 72 !important;
+}
+
+/* line 7, ../sass/wanshua/_sidebar.scss */
+.sidebar::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* line 8, ../sass/wanshua/_sidebar.scss */
+.sidebar {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  overflow: scroll;
+}
+
+/* line 14, ../sass/wanshua/_sidebar.scss */
+.player-list {
+  font-size: 1.4rem;
+  overflow: scroll;
+}
+/* line 17, ../sass/wanshua/_sidebar.scss */
+.player-list li {
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+/* line 20, ../sass/wanshua/_sidebar.scss */
+.player-list li .player-avatar {
+  width: 48px;
+  height: 48px;
+  margin-right: -60px;
+  float: left;
+  position: relative;
+}
+/* line 29, ../sass/wanshua/_sidebar.scss */
+.player-list li .player-avatar .player-avatar-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-indent: -2000em;
+}
+/* line 37, ../sass/wanshua/_sidebar.scss */
+.player-list li .player-avatar span.live-sign {
+  padding: 3px 7px;
+  background: #FFEC00;
+  color: #333;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 1.4rem;
+}
+/* line 48, ../sass/wanshua/_sidebar.scss */
+.player-list li .player-info {
+  margin-left: 60px;
+  padding-top: 0.5rem;
+  position: relative;
+}
+/* line 52, ../sass/wanshua/_sidebar.scss */
+.player-list li .player-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+/* line 57, ../sass/wanshua/_sidebar.scss */
+.player-list li .player-info a {
+  color: #3D464D;
+}
+/* line 60, ../sass/wanshua/_sidebar.scss */
+.player-list li .player-info p.recommended-note {
+  font-size: 1.2rem;
+  color: #999;
+}
+/* line 64, ../sass/wanshua/_sidebar.scss */
+.player-list li .player-info span.live-sign {
+  padding: 3px 7px;
+  background: #FFEC00;
+  color: #333;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 1.4rem;
+}
+
+/* line 78, ../sass/wanshua/_sidebar.scss */
+#video-sidebar {
+  position: fixed;
+  right: 0;
+  top: 72;
+  padding-top: 0;
+  z-index: 98;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 86, ../sass/wanshua/_sidebar.scss */
+#video-sidebar.video-sidebar {
+  padding: 4.5rem 3rem;
+  overflow: scroll;
+}
+
+/* line 92, ../sass/wanshua/_sidebar.scss */
+.sidebar.living-sidebar {
+  padding: 0;
+}
+
+/* line 96, ../sass/wanshua/_sidebar.scss */
+.living-sidebar {
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+/* line 99, ../sass/wanshua/_sidebar.scss */
+.living-sidebar .nav-tabs {
+  width: 100%;
+  height: 42px;
+  overflow: hidden;
+  border: none;
+}
+/* line 104, ../sass/wanshua/_sidebar.scss */
+.living-sidebar .nav-tabs li {
+  border: none;
+  width: 50%;
+  text-align: center;
+  display: block;
+  float: left;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+/* line 114, ../sass/wanshua/_sidebar.scss */
+.living-sidebar .nav-tabs li.active a {
+  border: none;
+  background: #FFEC00;
+}
+/* line 119, ../sass/wanshua/_sidebar.scss */
+.living-sidebar .nav-tabs li a {
+  background: #e8e8e8;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+/* line 129, ../sass/wanshua/_sidebar.scss */
+.aside-tab-wrapper {
+  width: 100%;
+}
+
+/* line 136, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+/* line 141, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-list {
+  width: 100%;
+  flex: 1 1 100%;
+  overflow: auto;
+  font-size: 1.4rem;
+  padding: 5px 0;
+  position: relative;
+  /* clear the floats here on parent */
+}
+/* line 148, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-list .chat-list-inner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* line 153, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-list .bubble {
+  clear: both;
+  padding: 5px 10px;
+  line-height: 3rem;
+}
+/* line 157, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-list .bubble.player {
+  color: #ec3e3e;
+}
+/* line 159, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-list .bubble.player .sender {
+  color: #ec3e3e;
+  padding-left: 4.4rem;
+  background-image: url("../images/chat_host.png");
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  background-position: left center;
+  line-height: 3rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 170, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-list .bubble.player span.msg {
+  line-height: 3rem;
+  color: #ec3e3e;
+}
+/* line 176, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-list .bubble.mine .sender {
+  color: #ec3e3e;
+}
+/* line 181, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-list .bubble span.sender {
+  color: #1091dc;
+  line-height: 2rem;
+}
+/* line 186, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-list .bubble span.msg {
+  color: #333;
+  line-height: 2rem;
+  word-break: break-all;
+}
+/* line 193, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-input-field {
+  height: 60px;
+  width: 100%;
+  flex: 0 0 60px;
+  display: flex;
+  position: relative;
+}
+/* line 199, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-input-field .error-note {
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  padding: 10px;
+  font-size: 1.4rem;
+}
+/* line 205, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-input-field .error-note span {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+/* line 214, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-input-field input[type=text] {
+  flex: 1 1 auto;
+  border: 1px solid #eee;
+  padding: 0 1rem;
+  border-left: none;
+  border-right: none;
+}
+/* line 221, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-input-field button {
+  flex: 0 0 20%;
+  border: 1px solid #ec3e3e;
+  background: #ec3e3e;
+  color: #fff;
+}
+/* line 226, ../sass/wanshua/_sidebar.scss */
+.chat-list-wrapper .chat-input-field button i {
+  font-size: 3rem;
+}
+
+/* line 233, ../sass/wanshua/_sidebar.scss */
+.board-list {
+  padding: 5px 0;
+  font-size: 1.4rem;
+}
+/* line 236, ../sass/wanshua/_sidebar.scss */
+.board-list li {
+  line-height: 24px;
+  padding: 5px 15px;
+}
+/* line 239, ../sass/wanshua/_sidebar.scss */
+.board-list li .player-rate {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 3px;
+  background: #999;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+/* line 251, ../sass/wanshua/_sidebar.scss */
+.board-list li .player-info {
+  line-height: 24px;
+  vertical-align: middle;
+}
+/* line 255, ../sass/wanshua/_sidebar.scss */
+.board-list li .player-karma {
+  float: right;
+  background-image: url("../images/wan_coin.png");
+  background-size: 18px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+}
+/* line 264, ../sass/wanshua/_sidebar.scss */
+.board-list li:nth-child(1) .player-rate, .board-list li:nth-child(2) .player-rate, .board-list li:nth-child(3) .player-rate {
+  background-color: transparent;
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -2000em;
+  height: 24px;
+}
+/* line 272, ../sass/wanshua/_sidebar.scss */
+.board-list li:nth-child(1) .player-info, .board-list li:nth-child(2) .player-info, .board-list li:nth-child(3) .player-info {
+  color: #ec3e3e;
+}
+/* line 277, ../sass/wanshua/_sidebar.scss */
+.board-list li:nth-child(1) .player-rate {
+  background-image: url("../images/upstart_au.png");
+}
+/* line 282, ../sass/wanshua/_sidebar.scss */
+.board-list li:nth-child(2) .player-rate {
+  background-image: url("../images/upstart_ag.png");
+}
+/* line 287, ../sass/wanshua/_sidebar.scss */
+.board-list li:nth-child(3) .player-rate {
+  background-image: url("../images/upstart_cu.png");
+}
+
+/* line 1, ../sass/wanshua/_video.scss */
+.video-player-banner {
+  background: #fff;
+  position: relative;
+  height: 80px;
+}
+/* line 5, ../sass/wanshua/_video.scss */
+.video-player-banner .video-avatar {
+  width: 6rem;
+  height: 6rem;
+  float: left;
+  margin-right: -7rem;
+}
+/* line 11, ../sass/wanshua/_video.scss */
+.video-player-banner .video-info {
+  margin-left: 7rem;
+}
+/* line 13, ../sass/wanshua/_video.scss */
+.video-player-banner .video-info h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  line-height: 3rem;
+}
+/* line 17, ../sass/wanshua/_video.scss */
+.video-player-banner .video-info h1 span {
+  display: inline-block;
+}
+/* line 20, ../sass/wanshua/_video.scss */
+.video-player-banner .video-info h1 span.video-game {
+  font-size: 1.2rem;
+  margin-top: -5px;
+  margin-left: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 26, ../sass/wanshua/_video.scss */
+.video-player-banner .video-info h1 span.video-game a {
+  background: #FFEC00;
+  color: #333;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  padding-right: 10px;
+}
+/* line 33, ../sass/wanshua/_video.scss */
+.video-player-banner .video-info h1 span.video-game a i {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border-right: 1px solid #eedb00;
+  line-height: 24px;
+}
+/* line 44, ../sass/wanshua/_video.scss */
+.video-player-banner .video-info .video-meta .video-action {
+  margin-left: 20px;
+}
+
+/* line 51, ../sass/wanshua/_video.scss */
+.video-action {
+  position: inherit;
+}
+/* line 53, ../sass/wanshua/_video.scss */
+.video-action .video-dropdown {
+  box-shadow: none;
+}
+
+/* line 58, ../sass/wanshua/_video.scss */
+.video-content {
+  padding: 0;
+  background: #000;
+}
+/* line 63, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-inner .video-js {
+  width: 100%;
+}
+/* line 65, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-inner .video-js .vjs-big-play-button {
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -3rem;
+  top: 50%;
+  margin-top: -3rem;
+}
+/* line 77, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-actions {
+  background: #fff;
+  height: 80px;
+  padding: 10px;
+}
+/* line 81, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-actions .video-wallet, .video-content .video-wrapper .video-actions .video-gifts {
+  line-height: 60px;
+}
+/* line 85, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-actions .video-wallet .wallet-balance {
+  padding-left: 20px;
+  background-image: url("../images/wan_coin.png");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+/* line 91, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-actions .video-wallet .wallet-balance em {
+  font-style: normal;
+  color: RGBA(255, 194, 45, 1);
+  font-weight: bold;
+}
+/* line 97, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-actions .video-wallet a {
+  margin-left: 10px;
+}
+/* line 99, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-actions .video-wallet a:hover {
+  border-color: #eedb00;
+  color: #000;
+}
+/* line 106, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-actions .video-gifts ul {
+  list-style: none;
+}
+/* line 108, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-actions .video-gifts ul li {
+  display: block;
+  float: left;
+  margin-left: 6px;
+}
+/* line 112, ../sass/wanshua/_video.scss */
+.video-content .video-wrapper .video-actions .video-gifts ul li.gift {
+  width: 60px;
+}
+
+/* line 124, ../sass/wanshua/_video.scss */
+.gift.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* line 128, ../sass/wanshua/_video.scss */
+.gift.dropdown .dropdown-menu {
+  top: auto;
+  bottom: 70px;
+  left: auto;
+  right: 0;
+  z-index: 10000;
+  overflow: hidden;
+  padding: 10px;
+  width: 240px;
+}
+/* line 137, ../sass/wanshua/_video.scss */
+.gift.dropdown .dropdown-menu .gift-icon {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: -60px;
+}
+/* line 143, ../sass/wanshua/_video.scss */
+.gift.dropdown .dropdown-menu .gift-info {
+  margin-left: 60px;
+}
+/* line 145, ../sass/wanshua/_video.scss */
+.gift.dropdown .dropdown-menu .gift-info h4 {
+  font-size: 1.4rem;
+}
+/* line 147, ../sass/wanshua/_video.scss */
+.gift.dropdown .dropdown-menu .gift-info h4 span {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color: #ec3e3e;
+}
+/* line 153, ../sass/wanshua/_video.scss */
+.gift.dropdown .dropdown-menu .gift-info p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+/*---
+ Comments
+*/
+/* line 5, ../sass/wanshua/_comments.scss */
+.comment-wrapper {
+  padding: 0 1.5rem;
+}
+
+/* line 10, ../sass/wanshua/_comments.scss */
+.comment-form textarea.form-control {
+  border-radius: 0;
+}
+/* line 13, ../sass/wanshua/_comments.scss */
+.comment-form .form-submit {
+  text-align: right;
+}
+/* line 15, ../sass/wanshua/_comments.scss */
+.comment-form .form-submit .comment-author {
+  margin-right: 10px;
+}
+/* line 17, ../sass/wanshua/_comments.scss */
+.comment-form .form-submit .comment-author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+/* line 27, ../sass/wanshua/_comments.scss */
+.comments-area {
+  /*border-top: 1px solid #ccc;*/
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff;
+}
+/* line 32, ../sass/wanshua/_comments.scss */
+.comments-area h3 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* line 37, ../sass/wanshua/_comments.scss */
+.comment-list {
+  padding: 3rem 2rem;
+}
+/* line 39, ../sass/wanshua/_comments.scss */
+.comment-list .comment-respond {
+  background: #f7f7f7;
+  padding: 20px;
+}
+/* line 43, ../sass/wanshua/_comments.scss */
+.comment-list > li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8e8;
+  overflow: hidden;
+  position: relative;
+}
+/* line 48, ../sass/wanshua/_comments.scss */
+.comment-list > li:last-child {
+  border: none;
+}
+/* line 51, ../sass/wanshua/_comments.scss */
+.comment-list > li .comment-author-avatar {
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-right: -60px;
+}
+/* line 57, ../sass/wanshua/_comments.scss */
+.comment-list > li .comment-content {
+  margin-left: 60px;
+}
+/* line 59, ../sass/wanshua/_comments.scss */
+.comment-list > li .comment-content .comment-header {
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 62, ../sass/wanshua/_comments.scss */
+.comment-list > li .comment-content .comment-header .commented-time {
+  font-size: 12px;
+  color: #999;
+}
+/* line 68, ../sass/wanshua/_comments.scss */
+.comment-list > li .comment-content .comment-body p {
+  margin: 0;
+  padding: 10px 0;
+}
+/* line 73, ../sass/wanshua/_comments.scss */
+.comment-list > li .comment-content .comment-actions {
+  font-size: 12px;
+}
+/* line 75, ../sass/wanshua/_comments.scss */
+.comment-list > li .comment-content .comment-actions a {
+  color: #999;
+}
+/* line 77, ../sass/wanshua/_comments.scss */
+.comment-list > li .comment-content .comment-actions a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+/* line 82, ../sass/wanshua/_comments.scss */
+.comment-list > li .comment-content .comment-actions .comment-action {
+  float: right;
+}
+/* line 87, ../sass/wanshua/_comments.scss */
+.comment-list > li ul.children {
+  padding-left: 60px;
+  margin-top: 10px;
+}
+/* line 90, ../sass/wanshua/_comments.scss */
+.comment-list > li ul.children li {
+  border-top: 1px solid #e8e8e8;
+  padding-top: 10px;
+}
+
+/* line 99, ../sass/wanshua/_comments.scss */
+.comment-respond {
+  padding: 2rem;
+  background: #fff;
+}
+/* line 102, ../sass/wanshua/_comments.scss */
+.comment-respond h3.comment-reply-title {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+/* line 106, ../sass/wanshua/_comments.scss */
+.comment-respond .must-log-in {
+  padding: 30px 50px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 112, ../sass/wanshua/_comments.scss */
+.comment-respond .must-log-in a {
+  color: #2ecc71;
+  text-decoration: underline;
+}
+/* line 117, ../sass/wanshua/_comments.scss */
+.comment-respond .logged-in-as {
+  margin-bottom: 10px;
+}
+/* line 121, ../sass/wanshua/_comments.scss */
+.comment-respond .comment-form .comment-avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: -70px;
+  float: left;
+}
+/* line 127, ../sass/wanshua/_comments.scss */
+.comment-respond .comment-form .comment-textarea {
+  margin-left: 70px;
+}
+/* line 132, ../sass/wanshua/_comments.scss */
+.comment-respond .form-submit .submit {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0;
+  background: #FFEC00;
+  color: #fff;
+}
+/* line 138, ../sass/wanshua/_comments.scss */
+.comment-respond .form-submit .submit:hover {
+  background: #eedb00;
+}
+
+/* line 1, ../sass/wanshua/_profile.scss */
+.profile-page {
+  margin: 0 auto !important;
+}
+
+/* line 5, ../sass/wanshua/_profile.scss */
+.profile {
+  background: #fff;
+  margin-bottom: 3rem;
+}
+/* line 8, ../sass/wanshua/_profile.scss */
+.profile .profile-content {
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 36rem;
+}
+/* line 13, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 20, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta {
+  text-align: center;
+  color: #fff;
+  padding: 3.5rem 0;
+  font-size: 1.6rem;
+}
+/* line 26, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta .profile-avatar .profile-avatar-wrapper {
+  width: 12rem;
+  height: 12rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+}
+/* line 33, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta .profile-avatar .profile-avatar-wrapper .avatar-change {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background: #000;
+  color: #fff;
+  line-height: 32px;
+  font-size: 16px;
+  border-radius: 50%;
+  display: none;
+}
+/* line 45, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta .profile-avatar .profile-avatar-wrapper .avatar-change i {
+  line-height: 32px;
+}
+/* line 50, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta .profile-avatar .profile-avatar-wrapper:hover .avatar-change {
+  display: block;
+}
+/* line 56, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta h1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+/* line 59, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta h1 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 63, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta h1 span.gender {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 2.2rem;
+  font-size: 1.2rem;
+}
+/* line 73, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta h1 span.gender.gender-male {
+  background: #16a085;
+}
+/* line 76, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta h1 span.gender.gender-female {
+  background: #e74c3c;
+}
+/* line 79, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta h1 span.gender i {
+  line-height: 2.2rem;
+}
+/* line 87, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-content-inner .profile-meta .profile-actions {
+  margin-top: 2rem;
+}
+/* line 92, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-change {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  bottom: auto;
+  left: 2rem;
+}
+/* line 98, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-change .btn-link {
+  border: 1px solid #fff;
+  color: #fff;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+/* line 103, ../sass/wanshua/_profile.scss */
+.profile .profile-content .profile-change .btn-link:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+/* line 110, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs {
+  height: 62px;
+  line-height: 6rem;
+  background: #fff;
+  position: relative;
+}
+/* line 115, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs ul.nav-tabs {
+  font-size: 1.6rem;
+  border: none;
+}
+/* line 118, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs ul.nav-tabs li {
+  margin: 0;
+  border-right: 1px solid #e8e8e8;
+}
+/* line 121, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs ul.nav-tabs li a {
+  line-height: 6rem;
+  padding: 0 3rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+/* line 127, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs ul.nav-tabs li a .tab-count {
+  display: inline-block;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  font-size: 1.2rem;
+  background: #e8e8e8;
+  margin-left: 0.8rem;
+  padding: 0 5px;
+  border-radius: 3px;
+  position: relative;
+}
+/* line 137, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs ul.nav-tabs li a .tab-count::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 5px 0;
+  border-color: transparent #e8e8e8 transparent transparent;
+  position: absolute;
+  right: 100%;
+  top: 6px;
+}
+/* line 151, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs ul.nav-tabs li.active a, .profile .profile-tabs ul.nav-tabs li:hover a {
+  border-color: #FFEC00;
+}
+/* line 155, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs ul.nav-tabs li:last-child {
+  border-right: none;
+}
+/* line 158, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs ul.nav-tabs li#my-coins {
+  padding-right: 3rem;
+}
+/* line 160, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs ul.nav-tabs li#my-coins a {
+  padding: 0;
+  border-bottom: none;
+}
+/* line 163, ../sass/wanshua/_profile.scss */
+.profile .profile-tabs ul.nav-tabs li#my-coins a:hover {
+  color: #2ecc71;
+  text-decoration: underline;
+}
+
+/* line 175, ../sass/wanshua/_profile.scss */
+.user-cards li {
+  margin-bottom: 3rem;
+}
+/* line 177, ../sass/wanshua/_profile.scss */
+.user-cards li .user-avatar {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px 3px 0 0;
+}
+/* line 182, ../sass/wanshua/_profile.scss */
+.user-cards li .user-avatar a {
+  display: block;
+  padding: 2rem 0;
+}
+/* line 186, ../sass/wanshua/_profile.scss */
+.user-cards li .user-avatar .avatar {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  border: 3px solid #fff;
+}
+/* line 193, ../sass/wanshua/_profile.scss */
+.user-cards li .user-meta {
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+}
+/* line 197, ../sass/wanshua/_profile.scss */
+.user-cards li .user-meta h3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+/* line 200, ../sass/wanshua/_profile.scss */
+.user-cards li .user-meta h3 a {
+  vertical-align: middle;
+}
+/* line 203, ../sass/wanshua/_profile.scss */
+.user-cards li .user-meta h3 span.gender {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 16px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* line 214, ../sass/wanshua/_profile.scss */
+.user-cards li .user-meta h3 span.gender i {
+  line-height: 16px;
+}
+
+/* line 223, ../sass/wanshua/_profile.scss */
+.user-list {
+  background: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+/* line 228, ../sass/wanshua/_profile.scss */
+.user-list li {
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+}
+/* line 233, ../sass/wanshua/_profile.scss */
+.user-list li .user-avatar {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  float: left;
+  margin-right: -100px;
+}
+/* line 239, ../sass/wanshua/_profile.scss */
+.user-list li .user-avatar .avatar {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+}
+/* line 245, ../sass/wanshua/_profile.scss */
+.user-list li .user-meta {
+  margin-left: 100px;
+  padding: 20px;
+  font-size: 1.4rem;
+}
+/* line 249, ../sass/wanshua/_profile.scss */
+.user-list li .user-meta h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+/* line 252, ../sass/wanshua/_profile.scss */
+.user-list li .user-meta h3 span.gender {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 16px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* line 263, ../sass/wanshua/_profile.scss */
+.user-list li .user-meta h3 span.gender.gender-male {
+  background: #16a085;
+}
+/* line 266, ../sass/wanshua/_profile.scss */
+.user-list li .user-meta h3 span.gender.gender-female {
+  background: #e74c3c;
+}
+/* line 269, ../sass/wanshua/_profile.scss */
+.user-list li .user-meta h3 span.gender i {
+  line-height: 16px;
+}
+/* line 274, ../sass/wanshua/_profile.scss */
+.user-list li .user-meta .user-data, .user-list li .user-meta .user-desc {
+  font-size: 1.2rem;
+}
+/* line 278, ../sass/wanshua/_profile.scss */
+.user-list li .user-actions {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+/* line 2, ../sass/wanshua/_settings.scss */
+.settings-sidebar .sidebar-wrapper {
+  background: #fff;
+}
+/* line 5, ../sass/wanshua/_settings.scss */
+.settings-sidebar h2 {
+  margin: 0 0 10px;
+  padding: 10px;
+}
+/* line 9, ../sass/wanshua/_settings.scss */
+.settings-sidebar ul {
+  background: #fff;
+  font-size: 1.4rem;
+  padding: 20px 0;
+}
+/* line 14, ../sass/wanshua/_settings.scss */
+.settings-sidebar ul li a {
+  display: block;
+  padding: 10px;
+  border-left: 4px solid transparent;
+}
+/* line 18, ../sass/wanshua/_settings.scss */
+.settings-sidebar ul li a:hover {
+  background: #f1f1f1;
+}
+/* line 23, ../sass/wanshua/_settings.scss */
+.settings-sidebar ul li.active a {
+  border-left: 4px solid #FFEC00;
+}
+
+/* line 30, ../sass/wanshua/_settings.scss */
+.settings-content {
+  margin-bottom: 5rem;
+  font-size: 1.4rem;
+}
+/* line 33, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper {
+  background: #fff;
+  min-height: 500px;
+  padding: 30px;
+}
+/* line 37, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper h3 {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+/* line 45, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper .form-group span, .settings-content .settings-content-wrapper .form-group a {
+  line-height: 36px;
+}
+/* line 48, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper .form-group a {
+  color: #2ecc71;
+  text-decoration: underline;
+}
+/* line 55, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper .form-group p.form-note {
+  font-size: 1.2rem;
+  margin: 5px 0 0;
+  padding-left: 10px;
+}
+/* line 59, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper .form-group p.form-note-error {
+  color: #e74c3c;
+}
+/* line 63, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper .form-group .profile-avatar-wrapper {
+  position: relative;
+  width: 88px;
+  height: 88px;
+}
+/* line 67, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper .form-group .profile-avatar-wrapper .camera-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
+}
+/* line 73, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper .form-group .profile-avatar-wrapper .camera-icon .camera-icon-wrapper {
+  background: #1abc9c;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  font-size: 1.2rem;
+}
+/* line 82, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper .form-group .profile-avatar-wrapper .camera-icon .camera-icon-wrapper:hover {
+  background: #16a085;
+}
+/* line 85, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper .form-group .profile-avatar-wrapper .camera-icon .camera-icon-wrapper input {
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+/* line 94, ../sass/wanshua/_settings.scss */
+.settings-content .settings-content-wrapper .form-group .profile-avatar-wrapper .camera-icon .camera-icon-wrapper i {
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
+  line-height: 24px;
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* line 112, ../sass/wanshua/_settings.scss */
+.bill-selection .form-group {
+  margin: 0;
+  margin-bottom: 30px;
+}
+/* line 116, ../sass/wanshua/_settings.scss */
+.bill-selection .bill-count {
+  float: left;
+  margin-right: 20px;
+}
+/* line 119, ../sass/wanshua/_settings.scss */
+.bill-selection .bill-count:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 123, ../sass/wanshua/_settings.scss */
+.bill-selection .bill-count input[type=radio], .bill-selection .bill-count input[type=checkbox] {
+  display: none;
+}
+/* line 126, ../sass/wanshua/_settings.scss */
+.bill-selection .bill-count input[type=radio] + label, .bill-selection .bill-count input[type=checkbox] + label {
+  display: inline-block;
+  width: 240px;
+  height: 60px;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 0;
+  padding: 0 20px;
+  position: relative;
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+/* line 139, ../sass/wanshua/_settings.scss */
+.bill-selection .bill-count input[type=radio] + label:after, .bill-selection .bill-count input[type=checkbox] + label:after {
+  bottom: 0;
+  right: 0;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 8px solid #ccc;
+  border-left: 8px solid transparent;
+}
+/* line 150, ../sass/wanshua/_settings.scss */
+.bill-selection .bill-count input[type=radio]:checked + label, .bill-selection .bill-count input[type=checkbox]:checked + label {
+  border-color: #5bc5be;
+  color: #5bc5be;
+}
+/* line 153, ../sass/wanshua/_settings.scss */
+.bill-selection .bill-count input[type=radio]:checked + label:after, .bill-selection .bill-count input[type=checkbox]:checked + label:after {
+  border-bottom: 8px solid #5bc5be;
+  border-left: 8px solid transparent;
+}
+
+/* line 162, ../sass/wanshua/_settings.scss */
+#pay-method .modal-dialog {
+  margin-top: 90px;
+}
+/* line 165, ../sass/wanshua/_settings.scss */
+#pay-method .modal-title {
+  text-align: center;
+}
+/* line 169, ../sass/wanshua/_settings.scss */
+#pay-method .modal-body .bill-selection {
+  overflow: hidden;
+}
+/* line 171, ../sass/wanshua/_settings.scss */
+#pay-method .modal-body .bill-selection h5 {
+  margin: 20px 0;
+}
+/* line 176, ../sass/wanshua/_settings.scss */
+#pay-method .modal-body .pay-method .form-group {
+  overflow: hidden;
+}
+/* line 179, ../sass/wanshua/_settings.scss */
+#pay-method .modal-body .pay-method .form-group .bill-count input[type=radio] + label, #pay-method .modal-body .pay-method .form-group .bill-count input[type=checkbox] + label {
+  height: 94px;
+}
+/* line 187, ../sass/wanshua/_settings.scss */
+#pay-method .modal-footer {
+  text-align: center;
+}
+
+/* line 193, ../sass/wanshua/_settings.scss */
+.settings-section .settings-section-wrapper {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+/* line 196, ../sass/wanshua/_settings.scss */
+.settings-section .settings-section-wrapper .settings-grid {
+  padding: 0 5px;
+}
+/* line 199, ../sass/wanshua/_settings.scss */
+.settings-section .settings-section-wrapper .grid-wrapper {
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 15px 10px;
+  text-align: center;
+}
+/* line 207, ../sass/wanshua/_settings.scss */
+.settings-section .settings-section-wrapper .grid-wrapper h4 {
+  font-size: 1.4rem;
+  color: #ccc;
+  border: none;
+}
+/* line 212, ../sass/wanshua/_settings.scss */
+.settings-section .settings-section-wrapper .grid-wrapper .grid-data {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+/* line 216, ../sass/wanshua/_settings.scss */
+.settings-section .settings-section-wrapper .grid-wrapper .grid-attr {
+  margin-bottom: 10px;
+}
+/* line 220, ../sass/wanshua/_settings.scss */
+.settings-section .settings-section-wrapper .grid-wrapper .grid-link a.grid-jump {
+  color: #999;
+}
+/* line 222, ../sass/wanshua/_settings.scss */
+.settings-section .settings-section-wrapper .grid-wrapper .grid-link a.grid-jump:hover {
+  color: #ccc;
+}
+/* line 229, ../sass/wanshua/_settings.scss */
+.settings-section h4.section-title {
+  font-size: 1.6rem;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+/* line 236, ../sass/wanshua/_settings.scss */
+.settings-section ul {
+  padding-left: 2rem;
+  list-style: square;
+}
+/* line 245, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .section-table-header {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+/* line 249, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .section-table-header .table-items .table-item {
+  background: #454545;
+  color: #fff;
+  border: none !important;
+  font-weight: bold;
+}
+/* line 257, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .section-table-body {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+/* line 261, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items {
+  overflow: hidden;
+}
+/* line 263, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items .table-item {
+  float: left;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+/* line 268, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items .table-item.table-time {
+  width: 25%;
+  border-right: 1px solid #ccc;
+}
+/* line 272, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items .table-item.table-desc {
+  width: 35%;
+  border-right: 1px solid #ccc;
+}
+/* line 276, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items .table-item.table-amount {
+  width: 20%;
+  border-right: 1px solid #ccc;
+}
+/* line 280, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items .table-item.table-status {
+  width: 20%;
+}
+/* line 283, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items .table-item.table-status .badge.badge-processing {
+  background: #bdc3c7;
+  color: #999;
+}
+/* line 287, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items .table-item.table-status .badge.badge-success {
+  background: #1abc9c;
+  color: #fff;
+}
+/* line 293, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items .table-item.table-liver {
+  width: 35%;
+  border-right: 1px solid #ccc;
+}
+/* line 297, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items .table-item.table-board-now {
+  width: 35%;
+  border-right: 1px solid #ccc;
+}
+/* line 301, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items .table-item.table-best {
+  width: 30%;
+}
+/* line 305, ../sass/wanshua/_settings.scss */
+.settings-section .section-table .table-items.table-empty {
+  border-bottom: 1px solid #ccc;
+  padding: 30px;
+  text-align: center;
+}
+
+/* line 1, ../sass/wanshua/_page.scss */
+.single-page {
+  margin-top: 5rem;
+}
+
+/* line 5, ../sass/wanshua/_page.scss */
+.page-content {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 8, ../sass/wanshua/_page.scss */
+.page-content .page-content-wrapper {
+  background: #fff;
+  padding: 60px;
+  font-size: 1.4rem;
+}
+/* line 12, ../sass/wanshua/_page.scss */
+.page-content .page-content-wrapper h3 {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+/* line 19, ../sass/wanshua/_page.scss */
+.page-content .page-content-wrapper .entry-content h4 {
+  margin: 3rem 0 2rem 0;
+}
+
+/* line 26, ../sass/wanshua/_page.scss */
+.downloads {
+  margin-top: 3rem;
+  overflow: hidden;
+}
+/* line 29, ../sass/wanshua/_page.scss */
+.downloads h4 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* line 34, ../sass/wanshua/_page.scss */
+.downloads .download .download-item {
+  border: 1px solid #ccc;
+}
+/* line 36, ../sass/wanshua/_page.scss */
+.downloads .download .download-item h5 {
+  text-align: center;
+  margin: 2rem 0;
+}
+/* line 43, ../sass/wanshua/_page.scss */
+.downloads .download .download-item .download-btn {
+  margin: 2rem 0;
+}
+/* line 45, ../sass/wanshua/_page.scss */
+.downloads .download .download-item .download-btn a.btn {
+  width: 100%;
+}
+/* line 51, ../sass/wanshua/_page.scss */
+.downloads .download-android {
+  border-right: 1px solid #ccc;
+}
+/* line 54, ../sass/wanshua/_page.scss */
+.downloads .download-ios {
+  position: relative;
+}
+/* line 56, ../sass/wanshua/_page.scss */
+.downloads .download-ios .stay-tuned {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  font-size: 2.4rem;
+  padding-top: 120px;
+}
+
+/* line 2, ../sass/wanshua/_billboard.scss */
+.billboard .board-content {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+/* line 6, ../sass/wanshua/_billboard.scss */
+.billboard .board-section {
+  padding: 0 5px;
+  margin-bottom: 5rem;
+}
+/* line 9, ../sass/wanshua/_billboard.scss */
+.billboard .board-section .board-wrapper {
+  background: #fff;
+}
+/* line 11, ../sass/wanshua/_billboard.scss */
+.billboard .board-section .board-wrapper .section-title {
+  padding: 20px 10px;
+  text-align: center;
+  background: #FFEC00;
+  color: #333;
+}
+/* line 17, ../sass/wanshua/_billboard.scss */
+.billboard .board-section .board-wrapper .board-list {
+  overflow: visible;
+}
+/* line 19, ../sass/wanshua/_billboard.scss */
+.billboard .board-section .board-wrapper .board-list li {
+  margin-bottom: 0px;
+  padding-left: 34px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 25, ../sass/wanshua/_billboard.scss */
+.billboard .board-section .board-wrapper .board-list li:nth-child(1) .player-rate, .billboard .board-section .board-wrapper .board-list li:nth-child(2) .player-rate, .billboard .board-section .board-wrapper .board-list li:nth-child(3) .player-rate {
+  top: 16px;
+}
+/* line 29, ../sass/wanshua/_billboard.scss */
+.billboard .board-section .board-wrapper .board-list li::after {
+  content: '';
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+/* line 35, ../sass/wanshua/_billboard.scss */
+.billboard .board-section .board-wrapper .board-list li .player-rate {
+  position: absolute;
+  left: 10px;
+  top: 22px;
+}
+/* line 41, ../sass/wanshua/_billboard.scss */
+.billboard .board-section .board-wrapper .board-list li .player-info h3 {
+  margin-top: 10px;
+}
+/* line 44, ../sass/wanshua/_billboard.scss */
+.billboard .board-section .board-wrapper .board-list li .player-info .player-attr {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+/* line 56, ../sass/wanshua/_billboard.scss */
+.page-title {
+  background: #fff;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+/* line 64, ../sass/wanshua/_billboard.scss */
+.page-title .board-filter {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+/* line 69, ../sass/wanshua/_billboard.scss */
+.page-title .board-filter a.btn-primary:hover {
+  border: none;
+}
+
+/* line 1, ../sass/wanshua/_footer.scss */
+.main-footer {
+  font-size: 1.4rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: #999;
+}
+
+/* line 9, ../sass/wanshua/_footer.scss */
+.friend-links ul {
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+}
+/* line 13, ../sass/wanshua/_footer.scss */
+.friend-links ul li {
+  width: 33.3333%;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+  float: left;
+}
+/* line 18, ../sass/wanshua/_footer.scss */
+.friend-links ul li a {
+  display: block;
+}
+
+/* line 1, ../sass/wanshua/_login-inout.scss */
+#form-account {
+  padding: 3rem 8rem;
+}
+
+/* line 6, ../sass/wanshua/_login-inout.scss */
+.log-in-out h3 {
+  font-weight: lighter;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.8rem;
+}
+/* line 12, ../sass/wanshua/_login-inout.scss */
+.log-in-out h3 span {
+  display: inline-block;
+  padding: 5px 1rem;
+  background: #fff;
+  position: relative;
+  bottom: -25px;
+}
+
+/* line 22, ../sass/wanshua/_login-inout.scss */
+.form-account {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 25, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 28, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group input {
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 2rem;
+}
+/* line 33, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group.phone-number {
+  position: relative;
+}
+/* line 35, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group.phone-number .input-group {
+  width: 100%;
+}
+/* line 38, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group.phone-number input {
+  padding-right: 12rem;
+  position: relative;
+  z-index: 2;
+}
+/* line 43, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group.phone-number .input-group-addon {
+  width: 12rem;
+  height: 4rem;
+  line-height: 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 3;
+  border-left: 1px solid #ccc;
+  border-radius: 0;
+}
+/* line 55, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group.phone-number .input-group-addon a, .form-account .form-group.phone-number .input-group-addon span {
+  line-height: 4rem;
+}
+/* line 58, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group.phone-number .input-group-addon a {
+  color: #666;
+  text-decoration: none;
+  display: block;
+}
+/* line 63, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group.phone-number .input-group-addon span {
+  display: block;
+  color: #999;
+}
+/* line 69, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group .form-note {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+}
+/* line 73, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group .form-note-error {
+  color: #e74c3c;
+}
+/* line 77, ../sass/wanshua/_login-inout.scss */
+.form-account .form-group button {
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+/* line 86, ../sass/wanshua/_login-inout.scss */
+.social-login {
+  text-align: center;
+  margin-top: 3rem;
+}
+/* line 89, ../sass/wanshua/_login-inout.scss */
+.social-login a {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #666;
+  margin-right: 2rem;
+}
+/* line 98, ../sass/wanshua/_login-inout.scss */
+.social-login a:hover {
+  color: #fff !important;
+}
+/* line 101, ../sass/wanshua/_login-inout.scss */
+.social-login a i {
+  font-size: 24px;
+  line-height: 6rem;
+}
+/* line 105, ../sass/wanshua/_login-inout.scss */
+.social-login a.social-weibo {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+/* line 108, ../sass/wanshua/_login-inout.scss */
+.social-login a.social-weibo:hover {
+  background: #e74c3c;
+}
+/* line 112, ../sass/wanshua/_login-inout.scss */
+.social-login a.social-wechat {
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+/* line 115, ../sass/wanshua/_login-inout.scss */
+.social-login a.social-wechat:hover {
+  background: #2ecc71;
+}
+/* line 119, ../sass/wanshua/_login-inout.scss */
+.social-login a.social-QQ {
+  border-color: #3498db;
+  color: #3498db;
+  margin-right: 0;
+}
+/* line 123, ../sass/wanshua/_login-inout.scss */
+.social-login a.social-QQ:hover {
+  background: #3498db;
+  margin-right: 0;
+}
+
+/* line 131, ../sass/wanshua/_login-inout.scss */
+.form-account-add {
+  font-size: 1.6rem;
+  overflow: hidden;
+  padding-top: 1rem;
+}
+/* line 135, ../sass/wanshua/_login-inout.scss */
+.form-account-add a {
+  color: #999;
+}
+/* line 137, ../sass/wanshua/_login-inout.scss */
+.form-account-add a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+/* line 144, ../sass/wanshua/_login-inout.scss */
+#modal-login {
+  font-size: 1.6rem;
+}
+/* line 146, ../sass/wanshua/_login-inout.scss */
+#modal-login .modal-dialog {
+  margin-top: 9rem;
+}
+/* line 149, ../sass/wanshua/_login-inout.scss */
+#modal-login .modal-header {
+  padding: 0;
+}
+/* line 151, ../sass/wanshua/_login-inout.scss */
+#modal-login .modal-header ul.nav-tabs {
+  border: none;
+}
+/* line 153, ../sass/wanshua/_login-inout.scss */
+#modal-login .modal-header ul.nav-tabs li {
+  width: 50%;
+}
+/* line 155, ../sass/wanshua/_login-inout.scss */
+#modal-login .modal-header ul.nav-tabs li a {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 6rem;
+  background: #e8e8e8;
+}
+/* line 166, ../sass/wanshua/_login-inout.scss */
+#modal-login .modal-header ul.nav-tabs li.active a {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+/* line 176, ../sass/wanshua/_login-inout.scss */
+#modal-login .modal-body {
+  padding: 3rem 6rem;
+}
+/* line 179, ../sass/wanshua/_login-inout.scss */
+#modal-login .modal-body h3 span {
+  bottom: -16px;
+}
+
+@media (max-width: 767px) {
+  /* line 2, ../sass/wanshua/rwd/_mobile.scss */
+  .wrapper {
+    padding-top: 60px;
+  }
+
+  /* line 5, ../sass/wanshua/rwd/_mobile.scss */
+  .page-nav {
+    margin-bottom: 0.5rem;
+  }
+
+  /* line 8, ../sass/wanshua/rwd/_mobile.scss */
+  .article-list .post {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  /* line 12, ../sass/wanshua/rwd/_mobile.scss */
+  .article-list .post .post-wrapper {
+    border: none;
+  }
+  /* line 14, ../sass/wanshua/rwd/_mobile.scss */
+  .article-list .post .post-wrapper .post-thumbnail {
+    /*height: 153px;*/
+  }
+
+  /* line 20, ../sass/wanshua/rwd/_mobile.scss */
+  .main-content .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* line 24, ../sass/wanshua/rwd/_mobile.scss */
+  .main-content .row .video-list .video-item {
+    padding: 0 5px;
+  }
+  /* line 29, ../sass/wanshua/rwd/_mobile.scss */
+  .main-content .content {
+    margin: 10px;
+  }
+  /* line 32, ../sass/wanshua/rwd/_mobile.scss */
+  .main-content .sidebar {
+    display: none;
+  }
+
+  /* line 38, ../sass/wanshua/rwd/_mobile.scss */
+  .friend-links ul li {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 2, ../sass/wanshua/rwd/_tablet.scss */
+  .article-list .post {
+    width: 50%;
+  }
+  /* line 5, ../sass/wanshua/rwd/_tablet.scss */
+  .article-list .post .post-wrapper .post-thumbnail {
+    height: 130px;
+  }
+
+  /* line 10, ../sass/wanshua/rwd/_tablet.scss */
+  .sidebar-wrapper.affix {
+    width: 249.984px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 2, ../sass/wanshua/rwd/_desktop.scss */
+  .article-list .post {
+    width: 33.3333%;
+  }
+  /* line 5, ../sass/wanshua/rwd/_desktop.scss */
+  .article-list .post .post-wrapper .post-thumbnail {
+    height: 154px;
+  }
+
+  /* line 10, ../sass/wanshua/rwd/_desktop.scss */
+  .sidebar-wrapper.affix {
+    width: 242.5px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 4, ../sass/wanshua/rwd/_desktopMD.scss */
+  .index-hero .hero-item .hero-item-content {
+    padding-right: 300px;
+  }
+  /* line 7, ../sass/wanshua/rwd/_desktopMD.scss */
+  .index-hero .hero-item .hero-item-aside {
+    width: 300px;
+  }
+  /* line 14, ../sass/wanshua/rwd/_desktopMD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info {
+    padding-top: 0;
+  }
+  /* line 16, ../sass/wanshua/rwd/_desktopMD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-avatar {
+    margin-bottom: 2rem;
+  }
+  /* line 18, ../sass/wanshua/rwd/_desktopMD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-avatar .avatar {
+    width: 90px;
+    height: 90px;
+  }
+  /* line 24, ../sass/wanshua/rwd/_desktopMD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-meta h3 {
+    margin-bottom: 1rem;
+  }
+  /* line 29, ../sass/wanshua/rwd/_desktopMD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content hr {
+    margin: 2rem 0;
+  }
+  /* line 33, ../sass/wanshua/rwd/_desktopMD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-games h4 {
+    margin-bottom: 1rem;
+  }
+  /* line 38, ../sass/wanshua/rwd/_desktopMD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-games ul li h5 {
+    font-size: 1.2rem;
+  }
+
+  /* line 51, ../sass/wanshua/rwd/_desktopMD.scss */
+  .main-content {
+    position: relative;
+    overflow: hidden;
+  }
+  /* line 54, ../sass/wanshua/rwd/_desktopMD.scss */
+  .main-content .content {
+    margin-right: 300px;
+    padding: 4.5rem;
+  }
+  /* line 58, ../sass/wanshua/rwd/_desktopMD.scss */
+  .main-content .sidebar {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-left: 1px solid #ccc;
+  }
+
+  /* line 68, ../sass/wanshua/rwd/_desktopMD.scss */
+  .content-wrapper {
+    width: 890px;
+    margin: 0 auto;
+  }
+
+  /* line 75, ../sass/wanshua/rwd/_desktopMD.scss */
+  .video-list .video-item .video-item-cover {
+    height: 150px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 4, ../sass/wanshua/rwd/_desktopHD.scss */
+  .index-hero .hero-item .hero-item-content {
+    padding-right: 360px;
+  }
+  /* line 7, ../sass/wanshua/rwd/_desktopHD.scss */
+  .index-hero .hero-item .hero-item-aside {
+    width: 360px;
+  }
+  /* line 14, ../sass/wanshua/rwd/_desktopHD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info {
+    padding-top: 0;
+  }
+  /* line 16, ../sass/wanshua/rwd/_desktopHD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-avatar {
+    margin-bottom: 2rem;
+  }
+  /* line 18, ../sass/wanshua/rwd/_desktopHD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-avatar .avatar {
+    width: 90px;
+    height: 90px;
+  }
+  /* line 24, ../sass/wanshua/rwd/_desktopHD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-info .player-meta h3 {
+    margin-bottom: 1rem;
+  }
+  /* line 29, ../sass/wanshua/rwd/_desktopHD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content hr {
+    margin: 2rem 0;
+  }
+  /* line 33, ../sass/wanshua/rwd/_desktopHD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-games h4 {
+    margin-bottom: 1rem;
+  }
+  /* line 38, ../sass/wanshua/rwd/_desktopHD.scss */
+  .index-hero .hero-item .hero-item-aside .hero-aside-wrapper .hero-aside-content .player-games ul li h5 {
+    font-size: 1.2rem;
+  }
+
+  /* line 51, ../sass/wanshua/rwd/_desktopHD.scss */
+  .main-content {
+    position: relative;
+    overflow: hidden;
+  }
+  /* line 54, ../sass/wanshua/rwd/_desktopHD.scss */
+  .main-content .content {
+    margin-right: 360px;
+    padding: 4.5rem;
+  }
+  /* line 58, ../sass/wanshua/rwd/_desktopHD.scss */
+  .main-content .sidebar {
+    width: 360px;
+    padding: 4.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-left: 1px solid #ccc;
+  }
+
+  /* line 69, ../sass/wanshua/rwd/_desktopHD.scss */
+  .content-wrapper {
+    width: 990px;
+    margin: 0 auto;
+  }
+
+  /* line 74, ../sass/wanshua/rwd/_desktopHD.scss */
+  .content-wrapper {
+    width: 990px;
+    margin: 0 auto;
+  }
+
+  /* line 80, ../sass/wanshua/rwd/_desktopHD.scss */
+  .video-list .video-item .video-item-cover {
+    height: 169px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1680px) {
+  /* line 91, ../sass/wanshua/rwd/_desktopHD.scss */
+  .content-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  /* line 97, ../sass/wanshua/rwd/_desktopHD.scss */
+  .video-list .video-item .video-item-cover {
+    height: 212px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,15 @@
+/*.add_box table{ width:500px; }*/
+
+
+ul,ol{ list-style-type: none; }
+th,td{ text-align: center; }
+.search_text{ width: 200px; border: 1px solid #ccc; padding: 3px; }
+.comment_list{ width: 800px; }
+.comment_pic, .comment_pic img{ width: 50px; height: 50px; background: #ccc; }
+.comment_count{ font-size: 15px; padding-bottom: 5px; }
+.comment_list_box{ min-height: 500px; }
+.show_st{ font-size: 15px; }
+.pagination li{ float: left; }
+.pagination li a{ display: block; margin-left: 10px; font-size: 15px; width: 20px; height: 20px; padding: 3px; text-align: center; background: #ccc; }
+.pagination .active a{ color: #fff; background: #038de5; }
+.show_false{ font-size: 15px; color: red; }

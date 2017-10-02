@@ -1,0 +1,201 @@
+
+$blur: 4px;
+.index-hero {
+  .hero-item {
+    background-color: #000;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    .hero-item-shadow {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.3);
+      box-shadow: inset 0 0 20rem rgba(0,0,0,1);
+      z-index: 2;
+    }
+    .hero-item-content {
+      position: relative;
+      z-index: 3;
+      padding-right: 360px;
+      text-shadow: 0 0 2px #000;
+      overflow: hidden;
+      .hero-content-wrapper {
+        float: none;
+      }
+      .hero-details {
+        /*padding-top: 10rem;*/
+      }
+      a {
+        color: #fff;
+      }
+      h2 {
+        font-size: 4.8rem;
+      }
+      .player-info {
+        margin: 3rem 0;
+        .player-avatar {
+          width: 48px;
+          height: 48px;
+          float: left;
+          margin-right: -60px;
+          .avatar {
+            border: 2px solid #fff;
+            box-shadow: 0 0 2px #000;
+          }
+        }
+        .player-meta {
+          margin-left: 60px;
+          line-height: 48px;
+          font-size: 1.8rem;
+          color: #fff;
+        }
+      }
+      .hero-divider {
+        overflow: hidden;
+        hr {
+          width: 10%;
+          text-align: left;
+          clear: both;
+          display: inline-block;
+          margin: 0;
+          height: 0;
+          border-top: 2px solid #e8e8e8;
+        }
+      }
+      .video-meta {
+        margin: 3rem 0;
+        span {
+          margin-right: 2rem;
+          line-height: 60px;
+          font-size: 2rem;
+          color: #fff;
+          i {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #fff;
+            color: #000;
+            line-height: 60px;
+            text-align: center;
+            font-size: 2.4rem;
+            text-shadow: none;
+            margin-right: 2rem;
+            &.fa-heart {
+              background: #e74c3c;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .video-btn {
+        text-shadow: none;
+        .btn-primary, .btn {
+          color: #333;
+        }
+      }
+    }
+    .hero-item-aside {
+      width: 360px;
+      float: left;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      color: #fff;
+      z-index: 4;
+      .hero-aside-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 4rem;
+        background: #000;
+        overflow: hidden;
+        /*opacity: 0.8;*/
+        .hero-aside-inner {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-position: top right;
+          -webkit-filter: blur(10px);
+          filter: blur(10px);
+          opacity: 0.5;
+          padding: 20px;
+          top: -20px;
+          left: -20px;
+        }
+        .hero-aside-content {
+          position: relative;
+          z-index: 5;
+          font-size: 1.6rem;
+          .player-info {
+            text-align: center;
+            padding-top: 3rem;
+            .player-avatar {
+              margin-bottom: 3rem;
+              .avatar {
+                border: 2px solid #fff;
+                box-shadow: 0 0 2px #000;
+                display: inline-block;
+              }
+            }
+            .player-meta {
+              h3 {
+                margin-bottom: 2rem;
+              }
+              p {
+                color: #ccc;
+              }
+            }
+            .player-btn {
+              margin-top: 3rem;
+              a.btn {
+                width: 15rem;
+                font-size: 1.6rem;
+                height: 4rem;
+              }
+            }
+          }
+          hr {
+            margin: 3rem 0;
+          }
+          .player-games {
+            /*margin-top: 2rem;*/
+            h4 {
+              font-size: 1.6rem;
+              margin-bottom: 1.5rem;
+            }
+            ul {
+              list-style: none;
+              margin-left: -1rem;
+              margin-right: -1rem;
+              overflow: hidden;
+              li {
+                width: 33.3333%;
+                float: left;
+                padding: 1rem;
+                img {
+                  border-radius: 10px;
+                }
+                h5 {
+                  margin-top: 1rem;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .carousel-indicators {
+    li {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+    }
+  }
+}

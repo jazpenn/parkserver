@@ -1,0 +1,105 @@
+@media (min-width: 1440px) {
+  .index-hero {
+    .hero-item {
+      .hero-item-content {
+        padding-right: 360px;
+      }
+      .hero-item-aside {
+        width: 360px;
+        .hero-aside-wrapper {
+          .hero-aside-inner {
+
+          }
+          .hero-aside-content {
+            .player-info {
+              padding-top: 0;
+              .player-avatar {
+                margin-bottom: 2rem;
+                .avatar {
+                  width: 90px;
+                  height: 90px;
+                }
+              }
+              .player-meta {
+                h3 {
+                  margin-bottom: 1rem;
+                }
+              }
+            }
+            hr {
+              margin: 2rem 0;
+            }
+            .player-games {
+              h4 {
+                margin-bottom: 1rem;
+              }
+              ul {
+                li {
+                  h5 {
+                    font-size: 1.2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .main-content {
+    position: relative;
+    overflow: hidden;
+    .content {
+      margin-right: 360px;
+      padding: 4.5rem;
+    }
+    .sidebar {
+      width: 360px;
+      padding: 4.5rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #fff;
+      border-left: 1px solid #ccc;
+    }
+  }
+
+  .content-wrapper {
+    width: 990px;
+    margin: 0 auto;
+  }
+
+  .content-wrapper {
+    width: 990px;
+    margin: 0 auto;
+  }
+  .video-list {
+    .video-item {
+      .video-item-cover {
+        height: 169px;
+        overflow: hidden;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1680px) {
+
+  .content-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+  .video-list {
+    .video-item {
+      .video-item-cover {
+        height: 212px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+

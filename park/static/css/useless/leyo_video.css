@@ -1,0 +1,138 @@
+
+@media only screen and (min-width: 992px) {
+
+.mobile-only {
+    display: none !important;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+.computer-only {
+    display: none !important;
+}
+
+.mobile-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+body {
+    font-family: Arial,Lato,'Helvetica Neue',Helvetica,sans-serif;
+}
+
+.no-header {
+    font-weight:normal !important;
+}
+
+.right-float {
+    float:right;
+} 
+
+.v-middle {
+    vertical-align: middle !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0 !important;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.ting-margin-bottom {
+    margin-bottom: 0.8rem !important;
+}
+
+#video .th {
+    width: 81.25% !important;
+}
+
+#game-detial #author .avatar {
+    width: 3em;
+    height: 3em;
+}
+
+#game-detial .images .image {
+    width: 3em !important;
+}
+
+#game-detial .font-one {
+    color: #414142;
+}
+
+#game-detial .font-two {
+    color: #6c6c6c;
+}
+
+#game-detial .font-three {
+    color: #a7a7a7;
+}
+
+#game-detial .font-four {
+    color: #6c6c6c;
+}
+
+#game-detial #comments .avatar {
+    width: 3.6em !important;
+    height: 3.6em !important;
+    margin-top: 0 !important;
+}
+
+#game-detial #comments .content {
+    margin-left: 5em !important;
+}
+
+#game-detial #comments .author {
+    color: #ca6f16;
+}
+
+#game-detial #comments .text {
+    color: #414142;
+}
+
+#game-detial #comments .comment {
+    margin-bottom: 1.7em !important;
+}
+
+#game-detial #comments .font-more {
+    color: #cfcdcd;
+}
+
+#video-player:first-child {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#download_btn_video {
+    border-radius:0.4rem;
+    background-color: #ffb034;
+}
+
+#download_btn_video:hover {
+    background-color: #f1a42b;
+}

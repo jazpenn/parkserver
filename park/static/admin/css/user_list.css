@@ -1,0 +1,17 @@
+
+ul,ol{ list-style-type: none; }
+/*table{border-collapse:collapse;border-spacing:0;}*/
+table{ width: 810px; }
+th,td{ text-align: center; }
+.user_count{ font-size: 15px; padding-bottom: 5px; }
+.user_oper{ width: 60px; }
+.user_oper a{ margin-left: 5px; }
+.user_list_box{ min-height: 500px; }
+.user_pic{ position: relative; }
+.user_pic img{ width:80px; height: 80px; }
+.user_pic a{ display: none; position: absolute; top: 0; right: 0; padding: 3px; background: #ccc;}
+.pagination li{ float: left; }
+.pagination li a{ display: block; margin-left: 10px; font-size: 15px; width: 20px; height: 20px; padding: 3px; text-align: center; background: #ccc; }
+.pagination .active a{ color: #fff; background: #038de5; }
+.avatar img{ width:50px; }
+.noauth,.blocked{font-size: 15px; color: red; }

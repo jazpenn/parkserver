@@ -1,0 +1,133 @@
+
+label.inline {
+    padding: 0.5rem 0;
+}
+
+.img-circle, .avatar {
+    border-radius: 50%;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.keep_one_line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.double-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+i.fa {
+    margin-right: 6px;
+}
+
+.main {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+._17wanshua {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+.banner .orbit-bullets {
+    top: -38px;
+}
+
+.banner .orbit-bullets {
+    top: -38px;
+}
+
+.banner .orbit-prev, .banner .orbit-next {
+    display: none;
+}
+
+.banner:hover .orbit-prev, .banner:hover .orbit-next {
+    display: initial;
+}
+
+.banner .orbit-bullets-container {
+    height: 0px;
+}
+
+
+.label-block .label-item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #ef3123;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+
+
+.room-item {
+    margin-bottom: 20px;
+}
+
+.room-item .cover {
+    min-height: 100px;
+}
+
+.room-item .room-name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.room-item .avatar-block {
+    float: left;
+    margin-right: 15px;
+}
+
+.room-item .avatar-block .avatar {
+    height: 20px;
+    width: 20px;
+    vertical-align: initial;
+}
+
+.room-item .words {
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.room-item .cover-block {
+    position: relative;
+}
+
+.room-item .cover-block .mask {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 24px;
+    line-height: 24px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.room-item .cover-block .mask .user-number {
+    float: right;
+}
+

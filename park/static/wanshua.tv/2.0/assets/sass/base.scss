@@ -1,0 +1,24 @@
+@import "./bourbon/bourbon";
+// Font color
+$color-md: #333333;
+$color-nl: #666666;
+$color-lt: #999999;
+// Radius
+$g-border-radius: rem(4);
+// Color
+$g-yellow: #ffc700;
+// Mixin
+@mixin keep_one_line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin keep_lines($value) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $value;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}

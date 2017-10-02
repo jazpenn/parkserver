@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <!-- Site Properities -->
+  <title>{% block main_title %} Subin后台 {% endblock %}</title>
+
+  <link rel="apple-touch-icon" href="/static/favicon.ico">
+
+  <link rel="shortcut icon" href="/static/favicon.ico" />
+
+  <link rel="stylesheet" type="text/css" href="/static/css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/components/icon.css">
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/jquery.cookie.js"></script>
+  <script src="/static/js/semantic.min.js"></script>
+  
+  {% block css %}
+
+  {% endblock %}
+  {% block headjs %}
+
+  {% endblock headjs %}
+
+  {% block jsdefine %} {% endblock jsdefine %}
+
+</head>
+
+<body>
+  <div class="ui grid">
+    <div class="row"></div>
+    <div class="row">
+      <div class="column">
+        <div class="ui secondary pointing large menu">
+          <a class="active item" href="/admin_">
+            <i class="home icon large"></i> Subin后台
+          </a>
+          <a class="item" href="/index">
+            <i class="reply icon"></i> 返回首页
+          </a>
+          <div class="right menu">
+            <a class="ui item">
+              {{ g.user.username }}
+            </a>
+            <a class="ui item" href="/admin_/logout">
+              Logout
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+      <div class="three wide column">
+        <div class="ui vertical menu">
+          <a class="item">
+            <i class="user icon"></i>
+            服务概况
+          </a>
+          <a class="item" href="{{ url_for('admin.index_test') }}">
+            <i class="user icon"></i>
+            用户回馈
+          </a>
+          <div class="item item_menu_hover">
+            <i class="icon plus"></i>
+            物业公司管理
+            <div class="menu" style="display:none">
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                添加物业
+              </a>
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                修改物业
+              </a>
+            </div>
+          </div>
+          <div class="item item_menu_hover">
+            <i class="icon plus"></i>
+            停车场管理
+            <div class="menu" style="display:none">
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                添加停车场
+              </a>
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                修改停车场</a>
+            </div>
+          </div>
+          <div class="item item_menu_hover">
+            <i class="icon plus"></i>
+            用户管理
+            <div class="menu" style="display:none">
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                添加用户
+              </a>
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                用户删改
+              </a>
+            </div>
+          </div>
+          <div class="item item_menu_hover">
+            <i class="icon plus"></i>
+            订单管理
+            <div class="menu" style="display:none">
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                收费明细
+              </a>
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                折扣明细
+              </a>
+            </div>
+          </div>
+          <div class="item item_menu_hover">
+            <i class="icon plus"></i>
+            卡券管理
+            <div class="menu" style="display:none">
+              <a class="item">
+                添加卡券
+              </a>
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                卡券删改
+              </a>
+            </div>
+          </div>
+          <div class="item item_menu_hover">
+            <i class="icon plus"></i>
+            发票管理
+            <div class="menu" style="display:none">
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                添加发票
+              </a>
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                发票删改
+              </a>
+            </div>
+          </div>
+          <div class="item item_menu_hover">
+            <i class="icon plus"></i>
+            优惠管理
+            <div class="menu" style="display:none">
+              <a class="item">
+                平台折扣
+              </a>
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                满减优惠
+              </a>
+            </div>
+          </div>
+          <div class="item item_menu_hover">
+            <i class="icon plus"></i>
+            管理员管理
+            <div class="menu" style="display:none">
+              <a class="item">
+                添加用户
+              </a>
+              <a class="item" href="{{ url_for('admin.index_test') }}">
+                用户删改
+              </a>
+            </div>
+          </div>
+          <script>
+          $(".item_menu_hover").hover(function(){
+            _icon = $(this).children(".icon");
+            _icon.addClass("blue");
+            _icon.removeClass("plus");
+            _icon.addClass("minus");
+            _icon.next().show();
+          },function(){
+            _icon = $(this).children(".icon");
+            _icon.removeClass("blue");
+            _icon.removeClass("minus");
+            _icon.addClass("plus");
+            _icon.next().hide();
+          });
+          </script>
+        </div>
+      </div>
+      <div class="thirteen wide column">
+        <div class="ui basic segment">
+          <h2 class="ui right floated header">{% block title %} 首页 {% endblock %}</h2>
+          <div class="ui clearing divider"></div>
+          <div class="ui basic segment">
+            {% block content %}
+
+
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+{% block jslib %}
+{% endblock %}
+{% block js %}
+{% endblock %}
+<script>
+$(function(){
+    if (location.pathname!='/admin_/')
+        $(window).scrollTop($.cookie('cur_scroll'));
+});
+$(window).scroll(function() {
+    $.cookie('cur_scroll', $(window).scrollTop(), { path: '/admin_'});
+});
+</script>
+</html>

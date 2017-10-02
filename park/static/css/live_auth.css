@@ -1,0 +1,24 @@
+.profile-block {
+    font-size: 18px;
+    background-color: #d8d8d8;
+    color: #fff;
+    height: 55px;
+    line-height: 55px;
+}
+
+.label-container {
+    border-bottom: 1px solid rgba(78, 78, 78, 0.31);
+    line-height: 60px;
+    height: 62px;
+    margin-bottom: 30px;
+}
+
+.label-container .label-item {
+    font-size: 16px;
+    cursor: pointer;
+    color: #222;
+}
+
+.label-container .label-item.active {
+    border-bottom: 3px solid #ef3123;
+}

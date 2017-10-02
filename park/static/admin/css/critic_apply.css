@@ -1,0 +1,11 @@
+
+ul,ol{ list-style-type: none; }
+/*table{border-collapse:collapse;border-spacing:0;}*/
+table{ width: 810px; }
+th,td{ text-align: center; }
+.critic_count{ font-size: 15px; padding-bottom: 5px; }
+.critic_oper{ width: 60px; }
+.critic_oper a{ margin-left: 5px; }
+.critic_list_box{ min-height: 500px; }
+.critic_pic{ position: relative; }
+.avatar img{ width:50px; }

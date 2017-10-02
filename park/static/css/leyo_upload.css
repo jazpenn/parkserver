@@ -1,0 +1,137 @@
+
+@media only screen and (min-width: 992px) {
+
+.mobile-only {
+    display: none !important;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+.computer-only {
+    display: none !important;
+}
+
+.mobile-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+body {
+    font-family: Arial,Lato,'Helvetica Neue',Helvetica,sans-serif;
+}
+
+a {
+    color: #ffffff !important;
+    text-decoration:underline;
+}
+
+.no-header {
+    font-weight:normal !important;
+}
+
+.right-float {
+    float:right;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0 !important;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+.tiny-padding-top {
+    padding-top: 0.5rem !important;
+}
+
+.tiny-padding-top {
+    padding-top: 0.4rem !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+#nav-header {
+    background-image: url(../image/upload_banner.png);
+    background-repeat:no-repeat;
+    width: 100%;
+    background-position:center;
+}
+
+#qq_login {
+    width: 230px;
+    height: 48px;
+    background-image: url(../image/upload_qq_icon.png);
+}
+
+#qq_login:hover {
+    background-image: url(../image/upload_qq_icon_hover.png);
+}
+
+#weibo_login {
+    width: 230px;
+    height: 48px;
+    background-image: url(../image/upload_weibo_icon.png);
+}
+
+#weibo_login:hover {
+    background-image: url(../image/upload_weibo_icon_hover.png);
+}
+
+#upload_file {
+    border-style: dashed;
+    border-color: #ffb034;
+    border-radius: 0.6rem;
+}
+
+#upload_file:hover {
+    background-color: #efefef;
+}
+
+#file_input_image:hover {
+    cursor: pointer;
+}
+
+#upload-btn {
+    background-color: #ffb035;
+}
+
+#upload-btn:hover {
+    background-color: #e7902b;
+}
+
+#upload_index {
+    background-image: url(../image/upload_index_.png);
+    background-size:80px 22px;
+}
+
+#upload_index:hover {
+    background-image: url(../image/upload_index_hover.png);
+}
+

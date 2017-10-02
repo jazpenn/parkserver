@@ -1,0 +1,28 @@
+/*
+mixins
+*/
+
+/*
+# Color
+*/
+$pink: #FF3D1A;
+$red: #F2000E;
+$dark-grey: #262626;
+$mid-grey: #969696;
+$light-grey: #fbfbfb;
+$bg-color: #ebebeb;
+
+/*
+# Colors
+*/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin box-shadow($hoff, $voff, $blur, $spread, $color) {
+	-webkit-box-shadow: $hoff, $voff, $blur, $spread, $color;
+	   -moz-box-shadow: $hoff, $voff, $blur, $spread, $color;
+	    -ms-box-shadow: $hoff, $voff, $blur, $spread, $color;
+}

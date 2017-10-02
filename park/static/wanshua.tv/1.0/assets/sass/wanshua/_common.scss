@@ -1,0 +1,17 @@
+.wrapper {
+  padding-top: 72px;
+  height: 100%;
+  overflow: scroll;
+}
+
+.content-section {
+  background: #fff;
+  padding: 10px;
+  // border: 1px solid #ccc;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  p {
+    margin: 2rem 0;
+  }
+}

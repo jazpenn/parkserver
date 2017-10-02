@@ -1,0 +1,43 @@
+/*
+Additional Responsive Style Sheet
+*/
+
+@media (max-width: 768px) {
+	#content .posts .post .post-default .post-thumbnail {
+		max-height: 200px;
+	}
+	#content .posts .post .post-cover img.img-responsive, #content .posts .post .post-cover {
+		min-height: 200px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar.navbar-inverse .navbar-nav li > a, .navbar.navbar-inverse .navbar-nav li > a.active, .navbar.navbar-inverse .navbar-nav li > a:hover, .navbar.navbar-inverse .navbar-brand {
+		padding: 0 20px;
+	}
+
+	#content .posts .post .post-default .post-thumbnail {
+		max-height: 200px;
+	}
+	/*#content .posts .post .post-cover img.img-responsive {
+		min-height: 200px;
+	}*/
+}
+
+@media (min-width: 992px) {
+	.navbar.navbar-inverse .navbar-nav li > a, .navbar.navbar-inverse .navbar-nav li > a.active, .navbar.navbar-inverse .navbar-nav li > a:hover, .navbar.navbar-inverse .navbar-brand {
+		padding: 0 25px;
+	}
+	#content .posts .post .post-default .post-thumbnail {
+		max-height: 132px;
+	}
+	/*#content .posts .post .post-cover img.img-responsive {
+		min-height: 132px;
+	}*/
+}
+
+@media (min-width: 1200px) {
+	.navbar.navbar-inverse .navbar-nav li > a, .navbar.navbar-inverse .navbar-nav li > a.active, .navbar.navbar-inverse .navbar-nav li > a:hover, .navbar.navbar-inverse .navbar-brand {
+		padding: 0 30px;
+	}
+}

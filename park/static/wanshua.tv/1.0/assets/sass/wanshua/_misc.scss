@@ -1,0 +1,64 @@
+/*
+
+  Global Elements' Style
+
+*/
+
+.avatar-badge {
+  display: block;
+  position: relative;
+  i {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+.avatar {
+  border-radius: 50%;
+}
+
+
+/*
+  Back to top
+*/
+.back-to-top {
+  width: 32px;
+  position: fixed;
+  outline: none;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  &.show {
+    opacity: 0.1;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  a {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    font-size: 2rem;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer; 
+  }
+  i {
+    line-height: 50px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  &.global-up {
+    bottom: 100px;
+    right: 100px;
+  }
+}

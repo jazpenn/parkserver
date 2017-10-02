@@ -71,7 +71,7 @@ else:
 #app = create_app(configs.ProductionConfig)
 manager = Manager(app)
 
-socketio = Emitter({'host': 'localhost', 'port': 6379})
+#socketio = Emitter({'host': 'localhost', 'port': 6379})
 
 
 @manager.command
@@ -110,9 +110,9 @@ def init_redis_rank():
             u.id,random.randint(200,100000))
 
 
-@manager.option('-u', '--username', dest='username', default='user01')
-@manager.option('-p', '--password', dest='password', default='pass01')
-@manager.option('-e', '--email', dest='email', default='user01@gmail.com')
+@manager.option('-u', '--username', dest='username', default='jazpenn')
+@manager.option('-p', '--password', dest='password', default='jia')
+@manager.option('-e', '--email', dest='email', default='jazpenn@163.com')
 def create_user(username=None, password=None, email=None):
     password = generate_password_hash(password)
     cmsuser = CmsUser(username=username, password=password, email=email)

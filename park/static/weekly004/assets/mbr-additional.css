@@ -1,0 +1,19 @@
+body{
+	font-family: "微软雅黑";
+}
+#mbr-component-1 H1 {
+	color: #ffffff !important;
+	font-size: 46px !important;
+}
+#mbr-component-2 P {
+	color: #777777 !important;
+}
+#mbr-component-3 P {
+	color: #ffffff !important;
+}
+#mbr-component-3 H3 {
+	color: #ffffff !important;
+}
+.img-rounded{
+	padding-bottom: 20px;
+}

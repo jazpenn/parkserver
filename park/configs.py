@@ -39,7 +39,7 @@ class DefaultConfig(object):
     POSTGRESQL_HOST = 'localhost'
     RETHINKDB_HOST = 'localhost'
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:password@%s/leyotv' % POSTGRESQL_HOST
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:password@%s/park' % POSTGRESQL_HOST
 
     DEV_HOST = '182.92.152.61'
 
@@ -70,7 +70,7 @@ class TestConfig(object):
     RETHINKDB_HOST = 'localhost'
     REDIS_HOST = 'localhost'
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:password@%s/leyotv' % POSTGRESQL_HOST
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:password@%s/park' % POSTGRESQL_HOST
 
     DAYU_SECRET = '9ce5e0b308c9588c69a040b3ab4e90e4'
     DAYU_APPKEY = '23264310'
@@ -78,7 +78,7 @@ class TestConfig(object):
 
 class NoteditConfig(object):
     CONFIG_TYPE = 'notedit'
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:password@localhost/leyotv'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:password@localhost/park'
     SQLALCHEMY_ECHO = False
     HOST = 'localhost:8080'
     DEBUG = True
@@ -89,7 +89,7 @@ class NoteditConfig(object):
 
 class ProductionConfig(object):
     CONFIG_TYPE = 'production'
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:password@localhost/leyotv'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:password@localhost/park'
     DEBUG = False
     HOST = 'wan123.tv'
     SESSION_COOKIE_NAME = '_wanshua_session'
@@ -106,7 +106,7 @@ class ProductionConfig(object):
 
 class DevelopmentConfig(object):
     CONFIG_TYPE = 'development'
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:password@localhost/leyotv'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:password@localhost/park'
     DEBUG = False
     HOST = '182.92.152.61:8012'
     SESSION_COOKIE_NAME = '_tintin_session'

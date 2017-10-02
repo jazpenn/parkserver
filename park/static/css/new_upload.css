@@ -1,0 +1,43 @@
+
+
+
+#titile_board {
+	margin-bottom: 16px;
+}
+
+#input_board .input_field {
+	margin-bottom: 16px;
+}
+
+#input_board .drop_area {
+	background-color: #fff;
+	height: 144px;
+	border-radius: 6px;
+	border-style: dashed;
+	cursor: pointer;
+}
+
+#input_board .drop_area .tip_info {
+	position: relative;
+	top: 43px;
+}
+
+#input_board .drop_area .tip_info .fa {
+	font-size: 38px;
+}
+
+#input_board .drop_area .tip_info ins {
+	display: block;
+}
+
+#input_board .drop_area .tip_info .file_info {
+	font-size: 24px;
+}
+
+#progress_board {
+	margin-top: 20px;
+}
+
+#progress_board .progress {
+	height: 6px;
+}

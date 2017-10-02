@@ -1,0 +1,50 @@
+/*
+Additional Responsive Style Sheet
+*/
+@media (max-width: 768px) {
+  /* line 6, ../sass/rwd.scss */
+  #content .posts .post .post-default .post-thumbnail {
+    max-height: 200px;
+  }
+
+  /* line 9, ../sass/rwd.scss */
+  #content .posts .post .post-cover img.img-responsive, #content .posts .post .post-cover {
+    min-height: 200px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 15, ../sass/rwd.scss */
+  .navbar.navbar-inverse .navbar-nav li > a, .navbar.navbar-inverse .navbar-nav li > a.active, .navbar.navbar-inverse .navbar-nav li > a:hover, .navbar.navbar-inverse .navbar-brand {
+    padding: 0 20px;
+  }
+
+  /* line 19, ../sass/rwd.scss */
+  #content .posts .post .post-default .post-thumbnail {
+    max-height: 200px;
+  }
+
+  /*#content .posts .post .post-cover img.img-responsive {
+  	min-height: 200px;
+  }*/
+}
+@media (min-width: 992px) {
+  /* line 28, ../sass/rwd.scss */
+  .navbar.navbar-inverse .navbar-nav li > a, .navbar.navbar-inverse .navbar-nav li > a.active, .navbar.navbar-inverse .navbar-nav li > a:hover, .navbar.navbar-inverse .navbar-brand {
+    padding: 0 25px;
+  }
+
+  /* line 31, ../sass/rwd.scss */
+  #content .posts .post .post-default .post-thumbnail {
+    max-height: 132px;
+  }
+
+  /*#content .posts .post .post-cover img.img-responsive {
+  	min-height: 132px;
+  }*/
+}
+@media (min-width: 1200px) {
+  /* line 40, ../sass/rwd.scss */
+  .navbar.navbar-inverse .navbar-nav li > a, .navbar.navbar-inverse .navbar-nav li > a.active, .navbar.navbar-inverse .navbar-nav li > a:hover, .navbar.navbar-inverse .navbar-brand {
+    padding: 0 30px;
+  }
+}

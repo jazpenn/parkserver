@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <!-- Site Properities -->
+  <title>{% block main_title %} Subin后台 {% endblock %}</title>
+
+  <link rel="stylesheet" type="text/css" href="/static/css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/components/icon.css">
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/semantic.min.js"></script>
+  
+  {% block css %}
+
+  {% endblock %}
+  {% block headjs %}
+
+  {% endblock headjs %}
+
+  {% block jsdefine %} {% endblock jsdefine %}
+
+</head>
+
+<body>
+  <div class="ui page grid">
+    <div class="row"></div>
+    <div class="row">
+      <div class="column">
+        <div class="ui secondary pointing large menu">
+          <a class="active item" href="./index">
+            <i class="home icon"></i> Subin后台
+          </a>
+          <a class="item" href="/index">
+            <i class="reply icon"></i> 返回首页
+          </a>
+          <div class="right menu">
+            <a class="ui item">
+              {{ g.user.username }}
+            </a>
+            <a class="ui item" href="/admin_/logout">
+              Logout
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="three wide column"></div>
+        <div class="ten wide column">
+            <form class="ui form" id="login_form" name="login_form" method="post" action="">
+                {% if form.email.errors%}
+                {% for error in form.email.errors %}
+                    <div class="field"><strong>{{error}}</strong></div>
+                {% endfor %}
+                {% endif %}
+                <div class="field"><label for="id_email">E-mail</label>{{ form.email }}</div>
+                {% if form.password.errors%}
+                {% for error in form.password.errors %}
+                    <div class="field"><strong>{{error}}</strong></div>
+                {% endfor %}
+                {% endif %}
+                <div class="field"><label for="password">密码</label>
+                    {{ form.password }}
+
+               </div>
+                <div class="field"> <input type="submit" value="提交" /></div>
+            </form>
+        </div>
+    </div>
+</body>
+{% block jslib %}
+{% endblock %}
+{% block js %}
+{% endblock %}
+</html>
+

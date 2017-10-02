@@ -1,0 +1,404 @@
+.pre_icon,
+.next_icon {
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    #banner {
+        background-image: url(http://7u2tgb.com2.z0.glb.qiniucdn.com/16658771056_559a8b2c6d_o.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+#video_banner {
+    background-image: url(http://7u2tgb.com2.z0.glb.qiniucdn.com/16658771056_559a8b2c6d_o.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner {
+    height: 380px;
+    width: 100%;
+    text-align: center;
+}
+
+#banner_mask {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(rgba(15, 19, 24, 0.2), rgba(15, 19, 24, 0.7) 90%);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    height: 360px;
+    width: 100%;
+    opacity: 0.38;
+}
+
+#logo_17wanshua {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+}
+
+#logo_17wanshua .more_fun {
+    padding-top: 15px;
+}
+
+#logo_17wanshua .most_pro {
+    padding-bottom: 10px;
+}
+
+#logo_17wanshua .download_icon {
+    margin-top: 30px;
+}
+
+#recmd_star_group .list-group {
+    background: #fff !important;
+    margin-bottom: 0;
+}
+
+#recmd_star_group .list-group .list-group-item {
+    border: 1px solid #f6f5f6 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#recmd_star_group .list-group .list-group-item:first-child,
+#recmd_star_group .list-group .list-group-item:last-child {
+    border-radius: 0 !important;
+}
+
+.recmd_star {
+    height: 48px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.recmd_star .star_info {
+    vertical-align: middle;
+}
+
+.recmd_star .star_info .name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.recmd_star .star_info .follow_number {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.icon_group .fa {
+    border-radius: 40px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.icon_group .fa:hover {
+    background-color: #0cc;
+}
+
+@media (min-width: 992px) {
+    #recmd_video_group {
+        margin-right: 0;
+    }
+    #recmd_game_group {
+        margin-right: 0;
+    }
+}
+
+#recmd_video_group {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.recmd_video {
+    display: inline-block;
+}
+
+.recmd_video .thumbnail {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.recmd_video .thumbnail .video_pic {
+    height: 123px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.recmd_video .thumbnail .video_pic .fa {
+    position: relative;
+    top: 46px;
+}
+
+.recmd_video .thumbnail .caption {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.recmd_video .thumbnail .caption .video_desc {
+    line-height: 26px;
+    font-size: 14px;
+    color: #526376 !important;
+    font-weight: bold;
+    height: 26px;
+    transition: height 0.38s;
+}
+
+.recmd_video .thumbnail .caption .star_info {
+    height: 35px;
+}
+
+.recmd_video .thumbnail .caption .star_info .star_info_ {
+    vertical-align: middle;
+    color: #829ab5 !important;
+}
+
+.recmd_video .thumbnail .caption .star_info .star_info_ .title {}
+
+.recmd_game .thumbnail .video_pic {
+    height: 152px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.recmd_game .thumbnail .video_pic .fa {
+    position: relative;
+    top: 61px;
+}
+
+.recmd_game .thumbnail {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#recmd_game_group {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.recmd_game {
+    float: none !important;
+    display: inline-block;
+}
+
+.recmd_game .thumbnail {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recmd_game .thumbnail .game_pic {
+    margin-top: 21px;
+    margin-bottom: 25px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.recmd_game .thumbnail .caption {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.recmd_game .thumbnail .caption .game_desc {
+    line-height: 20px;
+    font-size: 14px;
+    color: #526376 !important;
+    text-align: center;
+    font-weight: bold;
+}
+
+.recmd_game .thumbnail .caption .game_info {
+    text-align: center;
+}
+
+.recmd_game .thumbnail .caption .game_info .game_info_ {
+    display: inline-block;
+    vertical-align: middle;
+    color: #829ab5 !important;
+}
+
+.recmd_game .thumbnail .caption .game_info .game_info_ .video_num .fa {
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    #activity_board {
+        background-size: 162% 140px !important;
+    }
+}
+
+#activity_board {
+    background-image: url(/static/tucaomc/tucaomc-web.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-color: #ffffff;
+    height: 140px;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+    #activity_board_2nd {
+        background-size: 200% 140px !important;
+    }
+}
+
+#activity_board_2nd {
+    background-image: url(../weekly021/web21.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-color: #ffffff;
+    height: 140px;
+    background-repeat: no-repeat;
+}
+
+#sort_by .nav li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+#sort_by .nav li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #f06;
+}
+
+.video_board {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video_item .thumbnail {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    border: 1px solid #f6f5f6 !important;
+}
+
+.video_item .thumbnail .video_pic {
+    height: 123px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.video_item .thumbnail .video_pic .fa-play {
+    position: relative;
+    top: 46px;
+}
+
+.video_item .thumbnail .video_pic .video_mask {
+    position: absolute;
+    bottom: 0;
+    padding: 2px 7px;
+    background-color: rgba(0, 0, 0, 0.62);
+    ;
+    color: #fff;
+    width: 100%;
+    background: -webkit-linear-gradient(90deg, #444 10%, rgba(228, 228, 217, 0.08) 90%);
+    background: -moz-linear-gradient(90deg, #444 10%, rgba(228, 228, 217, 0.08) 90%);
+    background: -ms-linear-gradient(90deg, #444 10%, rgba(228, 228, 217, 0.08) 90%);
+    background: -o-linear-gradient(90deg, #444 10%, rgba(228, 228, 217, 0.08) 90%);
+}
+
+.video_item .thumbnail .video_mask .video_like {
+    padding-left: 0;
+}
+
+.video_item .thumbnail .video_mask .video_play {
+    padding-right: 0;
+}
+
+.video_item .thumbnail .caption {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.video_item .thumbnail .caption .video_desc {
+    line-height: 26px;
+    height: 26px;
+    font-size: 14px;
+    color: #526376 !important;
+    font-weight: bold;
+    transition: height 0.38s;
+}
+
+.video_item .thumbnail .caption .star_info {
+    height: 35px;
+    position: relative;
+    top: 0;
+}
+
+.video_item .thumbnail .caption .star_info .star_info_ {
+    vertical-align: middle;
+    color: #829ab5 !important;
+}
+
+.video_item .thumbnail .caption .star_info .star_info_ .title {}
+
+#float_board {
+    position: fixed;
+    overflow: visible;
+    bottom: 0;
+    margin-bottom: 15px;
+    z-index: 1024;
+}
+
+#float_board .float_row {
+    white-space: nowrap;
+    position: relative;
+}
+
+#float_board .reply_item {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 18px;
+    display: inline-block;
+    padding-right: 10px;
+    margin: 10px;
+}
+
+#float_board .reply_item .avatar_block {
+    height: 30px;
+    margin: 3px;
+}
+
+#float_board .reply_item .reply_info {
+    vertical-align: middle;
+    max-width: 380px;
+    line-height: 36px;
+    display: inline-block;
+    color: #fff !important;
+}
+
+#float_board .reply_item .reply_info a {
+    color: #fff !important;
+}
+
+#float_board .reply_item .reply_info .reply_user {
+    display: inline-block;
+    float: left;
+}
+
+#float_board .reply_item .reply_info .reply_text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

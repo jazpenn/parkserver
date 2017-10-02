@@ -1,0 +1,28 @@
+
+ul,ol{ list-style-type: none; }
+/*table{border-collapse:collapse;border-spacing:0;}*/
+table{ width: 810px; }
+th,td{ text-align: center; }
+.pagination li{ float: left; }
+.pagination li a{ display: block; margin-left: 10px; font-size: 15px; width: 20px; height: 20px; padding: 3px; text-align: center; background: #ccc; }
+.pagination .active a{ color: #fff; background: #038de5; }
+
+.clear{
+	clear:both;
+}
+.date_btn a{
+	display: block;
+	float: left;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	padding: 3px 10px;
+	background: #bbb;
+
+}
+
+.cur_btn {
+	background: #abcdef !important;
+}

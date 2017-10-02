@@ -1,0 +1,292 @@
+
+.sidebar.is-sticky {
+  position: fixed !important;
+  top: 72 !important;
+}
+
+.sidebar::-webkit-scrollbar { width: 0 !important }
+.sidebar {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  overflow: scroll;
+}
+
+.player-list {
+  font-size: 1.4rem;
+  overflow: scroll;
+  li {
+    overflow: hidden;
+    margin-bottom: 2rem;
+    .player-avatar {
+      width: 48px;
+      height: 48px;
+      margin-right: -60px;
+      float: left;
+      position: relative;
+      .avatar {
+
+      }
+      .player-avatar-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-indent: -2000em;
+      }
+      span.live-sign {
+        padding: 3px 7px;
+        background: $brand;
+        color: #333;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 1.4rem;
+      }
+    }
+    .player-info {
+      margin-left: 60px;
+      padding-top: 0.5rem;
+      position: relative;
+      h3 {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+        font-weight: normal;
+      }
+      a {
+        color: #3D464D;
+      }
+      p.recommended-note {
+        font-size: 1.2rem;
+        color: #999;
+      }
+      span.live-sign {
+        padding: 3px 7px;
+        background: $brand;
+        color: #333;
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+#video-sidebar {
+  position: fixed;
+  right: 0;
+  top: 72;
+  padding-top: 0;
+  z-index: 98;
+  padding-left: 0;
+  padding-right: 0;
+  &.video-sidebar {
+    padding: 4.5rem 3rem;
+    overflow: scroll;
+  }
+}
+
+.sidebar.living-sidebar {
+  padding: 0;
+}
+
+.living-sidebar {
+  font-size: 1.6rem;
+  overflow: hidden;
+  .nav-tabs {
+    width: 100%;
+    height: 42px;
+    overflow: hidden;
+    border: none;
+    li {
+      border: none;
+      width: 50%;
+      text-align: center;
+      display: block;
+      float: left;
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: bold;
+      &.active {
+        a {
+          border: none;
+          background: $brand;
+        }
+      }
+      a {
+        background: #e8e8e8;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.aside-tab-wrapper {
+  width: 100%;
+  .tab-pane {
+
+  }
+}
+
+.chat-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  .chat-list {
+    width: 100%;
+    flex: 1 1 100%;
+    overflow: auto;
+    font-size: 1.4rem;
+    padding: 5px 0;
+    position: relative;
+    .chat-list-inner {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .bubble {
+      clear: both;
+      padding: 5px 10px;
+      line-height: 3rem;
+      &.player {
+        color: #ec3e3e;
+        .sender {
+          color: #ec3e3e;
+          padding-left: 4.4rem;
+          background-image: url('../images/chat_host.png');
+          background-size: 4rem;
+          background-repeat: no-repeat;
+          background-position: left center;
+          line-height: 3rem;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        span.msg {
+          line-height: 3rem;
+          color: #ec3e3e;
+        }
+      }
+      &.mine {
+        .sender {
+          color: #ec3e3e;
+
+        }
+      }
+      span.sender {
+        color: #1091dc;
+        line-height: 2rem;
+
+      }
+      span.msg {
+        color: #333;
+        line-height: 2rem;
+        word-break: break-all;
+      }
+    } /* clear the floats here on parent */
+  }
+  .chat-input-field {
+    height: 60px;
+    width: 100%;
+    flex: 0 0 60px;
+    display: flex;
+    position: relative;
+    .error-note {
+      position: absolute;
+      width: 100%;
+      bottom: 100%;
+      padding: 10px;
+      font-size: 1.4rem;
+      span {
+        background: rgba(0,0,0,0.8);
+        color: #fff;
+        border-radius: 10px;
+        display: block;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+    input[type=text] {
+      flex: 1 1 auto;
+      border: 1px solid #eee;
+      padding: 0 1rem;
+      border-left: none;
+      border-right: none;
+    }
+    button {
+      flex: 0 0 20%;
+      border: 1px solid #ec3e3e;
+      background: #ec3e3e;
+      color: #fff;
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.board-list {
+  padding: 5px 0;
+  font-size: 1.4rem;
+  li {
+    line-height: 24px;
+    padding: 5px 15px;
+    .player-rate {
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      text-align: center;
+      border-radius: 3px;
+      background: #999;
+      color: #fff;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    .player-info {
+      line-height: 24px;
+      vertical-align: middle;
+    }
+    .player-karma {
+      float: right;
+      background-image: url('../images/wan_coin.png');
+      background-size: 18px;
+      background-position: right center;
+      background-repeat: no-repeat;
+      padding-right: 20px;
+    }
+    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+      .player-rate {
+        background-color: transparent;
+        background-size: 18px;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-indent: -2000em;
+        height: 24px;
+      }
+      .player-info {
+        color: #ec3e3e;
+      }
+    }
+    &:nth-child(1) {
+      .player-rate {
+        background-image: url('../images/upstart_au.png');
+      }
+    }
+    &:nth-child(2) {
+      .player-rate {
+        background-image: url('../images/upstart_ag.png');
+      }
+    }
+    &:nth-child(3) {
+      .player-rate {
+        background-image: url('../images/upstart_cu.png');
+      }
+    }
+  }
+}

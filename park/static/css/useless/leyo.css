@@ -1,0 +1,183 @@
+
+@media only screen and (min-width: 992px) {
+
+.mobile-only {
+    display: none !important;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+.computer-only {
+    display: none !important;
+}
+
+.mobile-center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block !important;
+}
+
+}
+
+body {
+    font-family: Arial,Lato,'Helvetica Neue',Helvetica,sans-serif;
+}
+
+a {
+    color: #ffffff !important;
+    text-decoration:underline;
+}
+
+.no-header {
+    font-weight:normal !important;
+}
+
+.right-float {
+    float:right;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0 !important;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+.tiny-padding-top {
+    padding-top: 0.4rem !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+#nav-header {
+    background-image: url(../image/banner.png);
+    background-repeat:no-repeat;
+    width: 100%;
+    background-position:center;
+}
+
+#upload_index {
+    background-image: url(../image/upload_index_.png);
+    background-size:80px 22px;
+}
+
+#upload_index:hover {
+    background-image: url(../image/upload_index_hover.png);
+}
+
+#download_btn {
+    border-radius:0.4rem;
+    background-color: #ffffff;
+}
+
+#download_btn:hover {
+    background-color: #ffefd0;
+}
+
+#functions .func-font {
+}
+
+#functions .func-font-one {
+    color: #4e4e4e;
+}
+
+#functions .func-font-two {
+    color: #979797;
+    margin: 0.4em;
+}
+
+#recommendation .rec-font {
+    color: #484848;
+}
+
+#recommendation .rec-segment {
+    padding: 0.6em;
+}
+
+.in-image {
+    display: none;
+    position: absolute !important;
+    margin: 0;
+    padding: 0;
+    top: 1em;
+    left: 1em;
+    z-index: 1000;
+}
+
+.in-image-text {
+    display: inline-block;
+    color: #ffffff;
+}
+
+.in-image-text-background {
+    background-color: #000000;
+    padding: 0.2em;
+    opacity: 0.6;
+    border-radius: 0.3rem;
+}
+
+.image-top {
+    position: absolute !important;
+    display: none;
+    background-color: #323232 !important;
+    opacity: 0.56;
+    z-index: 100;
+}
+
+#games {
+    background-image: url(../image/games.png);
+    background-position:center;
+    background-color: #ffffff;
+}
+
+#contact-us {
+    background-color: #3f3f3f;
+}
+
+#contact-us #contact-help {
+    padding-left: 2rem;
+}
+
+#contact-us .font-one {
+    color: #9b9b9b !important;
+}
+
+#contact-us .font-two {
+    color: #dab886 !important;
+}
+
+#contact-us .font-three {
+    color: #b1b1b1 !important;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-us .font-four {
+    color: #ffffff !important;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-us .button {
+    background-color: #f8a42a;
+    width: 32%;
+    border-radius: 0.2rem;
+    color: #3f3f3f;
+}

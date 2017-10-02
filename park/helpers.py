@@ -59,7 +59,8 @@ class Backend(object):
         self.func_mapping = func_mapping
 
     def __getattr__(self, attr_name):
-        if self.func_mapping.has_key(attr_name):
+        #if self.func_mapping.has_key(attr_name):
+        if attr_name in self.func_mapping:
             func = lambda *args, **kwargs: self.__call__(attr_name, *args, **kwargs)
             func.__name__ = 'backend.' + attr_name
             return func

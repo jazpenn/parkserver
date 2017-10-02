@@ -485,7 +485,6 @@ b57decode = _global_instance._string_to_int
 
 from Crypto.Cipher import AES
 
-
 class Encryptor(object):
 
     """the encryptor that base on PyCrypto"""

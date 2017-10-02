@@ -1,0 +1,38 @@
+2017-09-30T09:23:46.730850000 40.115057s notice: Recursively removing directory /Users/jazpenn/parkserver/rethinkdb_data/tmp
+2017-09-30T09:23:46.737760000 40.121973s notice: Initializing directory /Users/jazpenn/parkserver/rethinkdb_data
+2017-09-30T09:23:46.738439000 40.122645s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/jazpenn/parkserver/rethinkdb_data' did not already exist or is empty.)
+2017-09-30T09:23:46.739101000 40.123308s notice: Running rethinkdb 2.3.5 (CLANG 8.0.0 (clang-800.0.38))...
+2017-09-30T09:23:46.754427000 40.138633s notice: Running on Darwin 16.7.0 x86_64
+2017-09-30T09:23:46.754481000 40.138686s notice: Loading data from directory /Users/jazpenn/parkserver/rethinkdb_data
+2017-09-30T09:23:46.865113000 40.249319s info: Automatically using cache size of 100 MB
+2017-09-30T09:23:46.865129000 40.249333s warn: Cache size does not leave much memory for server and query overhead (available memory: 479 MB).
+2017-09-30T09:23:46.865149000 40.249354s warn: Cache size is very low and may impact performance.
+2017-09-30T09:23:46.867873000 40.252079s notice: Listening for intracluster connections on port 29015
+2017-09-30T09:23:46.879859000 40.264064s notice: Listening for client driver connections on port 28015
+2017-09-30T09:23:46.880061000 40.264266s notice: Listening for administrative HTTP connections on port 8080
+2017-09-30T09:23:46.880065000 40.264270s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-09-30T09:23:46.880072000 40.264277s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-09-30T09:23:46.880075000 40.264280s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-09-30T09:23:46.880081000 40.264286s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-09-30T09:23:46.880089000 40.264293s notice: Server ready, "JZpDeMac_local_49e" 02e8da25-72e5-43d5-b433-53aa5fbfb63b
+2017-09-30T09:23:48.470269000 41.854423s notice: A newer version of the RethinkDB server is available: 2.3.6. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2017-09-30T09:26:51.076871000 224.456151s notice: Server got SIGINT from pid 752, uid 501; shutting down...
+2017-09-30T09:26:51.077071000 224.456350s notice: Shutting down client connections...
+2017-09-30T09:26:51.077282000 224.456561s notice: All client connections closed.
+2017-09-30T09:26:51.077294000 224.456573s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-09-30T09:26:51.082611000 224.461891s notice: Storage engine shut down.
+2017-09-30T11:19:39.235583000 40.107153s notice: Running rethinkdb 2.3.5 (CLANG 8.0.0 (clang-800.0.38))...
+2017-09-30T11:19:39.247395000 40.118956s notice: Running on Darwin 16.7.0 x86_64
+2017-09-30T11:19:39.247449000 40.119008s notice: Loading data from directory /Users/jazpenn/parkserver/rethinkdb_data
+2017-09-30T11:19:39.302113000 40.173674s info: Automatically using cache size of 100 MB
+2017-09-30T11:19:39.302131000 40.173690s warn: Cache size does not leave much memory for server and query overhead (available memory: 386 MB).
+2017-09-30T11:19:39.302142000 40.173702s warn: Cache size is very low and may impact performance.
+2017-09-30T11:19:39.304883000 40.176443s notice: Listening for intracluster connections on port 29015
+2017-09-30T11:19:39.317917000 40.189477s notice: Listening for client driver connections on port 28015
+2017-09-30T11:19:39.318536000 40.190096s notice: Listening for administrative HTTP connections on port 8080
+2017-09-30T11:19:39.318540000 40.190100s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-09-30T11:19:39.318546000 40.190106s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-09-30T11:19:39.318549000 40.190109s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-09-30T11:19:39.318555000 40.190115s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-09-30T11:19:39.318561000 40.190120s notice: Server ready, "JZpDeMac_local_49e" 02e8da25-72e5-43d5-b433-53aa5fbfb63b
+2017-09-30T11:19:41.729480000 42.600992s notice: A newer version of the RethinkDB server is available: 2.3.6. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.

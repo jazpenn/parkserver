@@ -1,0 +1,232 @@
+
+/*label.inline {
+    padding: 0.5rem 0;
+}*/
+
+.img-circle, .avatar {
+    border-radius: 50%;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.div-ex {
+    position: relative;
+    height: inherit;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.double-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+i.fa {
+    margin-right: 6px;
+}
+
+.main {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.left-side {
+    background-color: #212121;    
+    height: 100%;
+    color: #cccccc;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 0 0 260px;
+    -ms-flex: 0 0 260px;
+    flex: 0 0 260px;
+}
+
+.right-side {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    position: relative;
+}
+
+.left-side .top-block {
+    -webkit-flex: 0 0 166px;
+    -ms-flex: 0 0 166px;
+    flex: 0 0 166px;
+}
+
+.left-side .bottom-block {
+    overflow-y: auto;
+    -webkit-flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    margin-top: 12px;
+    padding-bottom: 38px;
+    position: relative;
+}
+
+.left-side .bottom-block::-webkit-scrollbar-track {
+    background-color: #212121;
+}
+
+.container.row {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.left-side ._17wanshua {
+    margin-top: 47px;
+}
+
+.left-side .auth-block {
+    margin-top: 38px;
+}
+
+.left-side .auth-block .login {
+    width: 140px;
+    background-color: transparent;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+    font-size: 18px;
+}
+
+.left-side .block-label {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.left-side .user-block {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.left-side .user-item .avatar-block .avatar {
+    height: 40px;
+    width: 40px;
+}
+
+.left-side .user-item .avatar-block {
+    float: left;
+    margin-right: 24px;
+}
+
+.left-side .user-item .words {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.left-side .user-item {
+    margin-bottom: 15px;
+}
+
+.left-side ._hr {
+    width: 100%;
+    height: auto;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#auth-modal .auth-container {
+    margin-top: 38px;
+    margin-bottom: 24px;
+}
+
+#auth-modal {
+    z-index: 10000;
+}
+
+.auth-block .account-block {
+    width: 180px;
+    display: inline-block;
+    position: relative;
+}
+
+.auth-block .account-block .avatar-block {
+    float: left;
+}
+
+.auth-block .account-block .mini-avatar {
+    height: 45px;
+    width: 45px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.auth-block .account-block .user-name {
+    line-height: 45px;
+    text-align: left;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #383838;
+}
+
+.auth-block .account-block .action-block {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.auth-block .account-block:hover .mini-avatar {
+    border-bottom-left-radius: 0;
+}
+
+.auth-block .account-block:hover .user-name {
+    border-bottom-right-radius: 0;
+}
+
+.auth-block .account-block:hover .action-block {
+    display: block;
+}
+
+.auth-block .account-block .action-block .item {
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 45px;
+    text-align: left;
+    width: 180px;
+    background-color: #565656;
+    cursor: pointer;
+    display: block;
+    color: #cccccc;
+}
+
+.auth-block .account-block .action-block .item:hover {
+    background-color: #383838;
+}
+
+.auth-block .account-block .action-block .item:last-child {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+

@@ -1,0 +1,64 @@
+.wrapper {
+    padding-top: 0;
+}
+
+.active-wrapper {
+    background-color: rgb(237, 25, 53);
+}
+
+.img-block {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    .inline-block {
+        position: absolute;
+        width: 16%;
+        z-index: 1;
+        bottom: 16%;
+        left: 42%;
+        .item {
+            cursor: pointer;
+        }
+        .go-btn:hover,
+        .tieba-btn:hover {
+            opacity: 0.82;
+        }
+        .tieba-btn {
+            margin-top: 12%;
+            width: 82%;
+        }
+    }
+}
+
+.block-1st {
+    width: 100%;
+}
+
+.block-2nd {
+    background: url('/static/a-liwu/2nd-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 162px;
+    padding-bottom: 162px;
+    .rank-wrapper {
+        width: 86%;
+        background: url('/static/a-liwu/2nd-bg-2.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .rank-table {
+        padding-top: 62px;
+        padding-bottom: 62px;
+        max-width: 80%;
+    }
+    .top-2nd {
+        img {
+            max-width: 80%;
+            float: right;
+        }
+    }
+}

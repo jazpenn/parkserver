@@ -54,6 +54,7 @@ ERR_DICT = {
         10026: u'今日观看奖励已经领取完毕，明天再来(⊙o⊙)哦'
         }
 
+
 def apijson(*args,**kwargs):
 
     _data = dict(*args,**kwargs)
@@ -68,14 +69,10 @@ def apijson(*args,**kwargs):
     return jsonify(code=code,data=_data,err_message=err_message)
 
 
-
-
-
-
-
 def _cookie_digest(payload, key=None):
     if key is None:
         key = app.config['SECRET_KEY']
+        key = bytes(str(key).encode('utf-8'))
     payload = payload.encode('utf-8')
     mac = hmac.new(key, payload, sha1)
     return mac.hexdigest()
@@ -88,8 +85,9 @@ def encode_cookie(payload):
 def decode_cookie(cookie):
     try:
         payload, digest = cookie.rsplit(u'|', 1)
-        digest = digest.encode('ascii')
-    except ValueError:
+        #digest = digest.encode('utf-8')
+        print('解密cookie得到的payload:', _cookie_digest(payload), 'digest:', digest)
+    except ValueError as e:
         return None
 
     if _cookie_digest(payload) == digest:
@@ -104,13 +102,14 @@ def set_logined(req, resp, ukey, timeout=None):
     }
     date_create = int(time.time())
     if timeout is not None:
-        assert isinstance(timeout, (int, long)), 'timeout must be an integer or None'
+        assert isinstance(timeout, (int, None)), 'timeout must be an integer or None'
         kargs['max_age'] = timeout
         kargs['expires'] = strutil.cookie_date(date_create + timeout)
     else:
         timeout = 0
     date_create = str(date_create)
-    sha1sum = hashlib.sha1(app.config.get('SECRET_KEY', '') + ukey + date_create).hexdigest()
+    origin_str = app.config.get('SECRET_KEY', '') + ukey + date_create
+    sha1sum = hashlib.sha1(origin_str.encode('utf-8')).hexdigest()
     resp.set_cookie('ukey', encode_cookie(ukey), **kargs)
     resp.set_cookie('date_create', encode_cookie(date_create), **kargs)
     resp.set_cookie('token', sha1sum, **kargs)
@@ -123,13 +122,20 @@ def set_logout(resp):
 
 
 def is_logined(req):
+    print('原始ukey:',req.cookies.get('ukey', u'') )
     ukey = decode_cookie(req.cookies.get('ukey', u''))
+    print('ukey', ukey)
     date_create = decode_cookie(req.cookies.get('date_create', u''))
+    print('date_create', date_create)
     if not (ukey and date_create):
+        print('没取到token')
         return False
     token = req.cookies.get('token', '')
-    if sha1(app.config.get('SECRET_KEY') + ukey.encode('utf-8') + \
-            date_create.encode('utf-8')).hexdigest() == token:
+    print('token', token)
+    # if sha1(app.config.get('SECRET_KEY') + ukey.encode('utf-8') + \
+    #         date_create.encode('utf-8')).hexdigest() == token:
+    if sha1((app.config.get('SECRET_KEY') + ukey + \
+                    date_create).encode('utf-8')).hexdigest() == token:
         return True
     return False
 

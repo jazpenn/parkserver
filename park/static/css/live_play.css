@@ -1,0 +1,336 @@
+.right-side {
+    -webkit-display: flex;
+    -ms-display: flexbox;
+    display: flex;
+    height: 100%;
+}
+
+.play-board {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    -webkit-flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.action-board {
+    -webkit-flex: 0 0 300px;
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.action-board .action-container {
+    height: 100%;
+    -webkit-display: flex;
+    -ms-display: flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}
+
+.action-board .action-container hr {
+    margin: 10px 0 0;
+}
+
+.play-board .board-switch {
+    padding-top: 12px;
+    padding-bottom: 18px;
+    color: #999;
+}
+
+.play-board .board-switch i {
+    cursor: pointer;
+}
+
+.play-board .board-switch i:hover {
+    color: #000;
+}
+
+.play-board .room-info .avatar-block {
+    height: 56px;
+    width: 56px;
+    float: left;
+    margin-right: 15px;
+}
+
+.play-board .room-info .info-block .info-line {
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.play-board .room-info .info-block .user-name,
+.play-board .room-info .info-block .game-name {
+    color: #ef3123;
+}
+
+.play-board .video-block {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.play-board .video-block .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: #fff;
+    width: 100%;
+    z-index: 10000;
+    padding-top: 70px;
+    text-align: center;
+}
+
+
+.play-board .video-block .disconnected {
+    
+    background-color: black;
+}
+
+.play-board .video-block .mask .img-container {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.play-board .video-block .mask .img-container img {
+    height: 64px;
+}
+
+.play-board .video-block .mask .words {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.play-board .video-block .mask .words .not-at-home {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #ee3221;
+    
+}
+
+.play-board .video-block .mask .words .go-fun {
+    font-size: 14px;
+    color: #999999;
+}
+
+.play-board .action-block {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.play-board .action-block .follow-block .item {
+    font-size: 14px;
+    line-height: 26px;
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+
+.play-board .action-block .follow-block .item.number {
+    border: 1px solid #c9c9c9;
+}
+
+.play-board .action-block .follow-block .item.follow {
+    background-color: #ef3123;
+    color: #fff;
+    border: 1px solid #ef3123;
+    cursor: pointer;
+}
+
+.play-board .action-block .follow-block .item.follow.is_follow {
+    background-color: #666;
+    border-color: #666;
+    width: 80px;
+}
+
+.play-board .action-block .share-block {
+    font-size: 14px;
+    color: #ef3123;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 12px;
+}
+
+.play-board .action-block .right-action .item {
+    color: #727272;
+    font-size: 14px;
+    line-height: 28px;
+    margin-left: 7px;
+}
+
+.play-board .action-block .right-action .item.danmu-ctl {
+    display: inline-block;
+    float: left;
+    height: 28px;
+}
+
+.play-board .action-block .right-action .item.danmu-ctl .switch {
+    margin: 0;
+}
+
+.play-board .room-intro .intro-header {
+    line-height: 38px;
+    width: 100%;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.play-board .room-intro .intro-body {
+    line-height: 32px;
+    width: 100%;
+    color: darkgray;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.action-board {
+    padding-top: 12px;
+    background-color: #eee;
+}
+
+.action-board .gift-rank {
+    -webkit-flex: 0 0 140px;
+    -ms-flex: 0 0 140px;
+    flex: 0 0 140px;
+    overflow-x: hidden;
+}
+
+.action-board .gift-rank:hover {
+    -webkit-flex: 0 0 320px;
+    -ms-flex: 0 0 320px;
+    flex: 0 0 320px;
+    overflow-x: hidden;
+}
+
+.action-board .reply-block {
+    -webkit-flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    -webkit-display: flex;
+    -ms-display: flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.action-board .reply-block .reply-container {
+    -webkit-flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    overflow-y: auto;
+}
+
+.action-board .reply-block .reply-submit {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    -webkit-flex: 0 0 57px;
+    -ms-flex: 0 0 57px;
+    flex: 0 0 57px;
+}
+
+.action-board .rank-header {
+    border-left: 6px solid #ef3123;
+    padding-left: 12px;
+    margin-bottom: 12px;
+}
+
+.action-board .rank-container .item {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.action-board .rank-container .item i {
+    color: #c9c9c9;
+}
+
+.action-board .rank-container .item.first {
+    color: #ef3123;
+}
+
+.action-board .rank-container .item.first i {
+    color: #ffc40f;
+}
+
+.action-board .reply-container {}
+
+.action-board .reply-container .item {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+
+.action-board .reply-container .item .user-name {
+    color: #ef3123;
+}
+
+.action-board .reply-container .item .words {
+    color: #4e4e4e;
+}
+
+.action-board .reply-submit {}
+
+.action-board .reply-submit .button {
+    background-color: #ef3123;
+}
+
+.danmu-ctl .switch-on {
+    position: absolute;
+    left: -45px;
+    color: white;
+    font-weight: bold;
+    line-height: 28px;
+    font-size: 9px;
+}
+
+.danmu-ctl .switch-off {
+    position: absolute;
+    left: -23px;
+    color: white;
+    font-weight: bold;
+    line-height: 28px;
+    font-size: 9px;
+}
+
+.danmu-ctl .switch input:checked+label {
+    background-color: #ef3123;
+}
+
+.gift-block .user-pay-info {
+    line-height:62px;
+}
+
+.gift-block .gift-list {
+    width: 450px;
+}
+
+.gift-block .gift-list .gift-container {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.gift-block .gift-list .gift-item {
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.gift-block .gift-list .gift-item .words {
+    font-size: 10px;
+    text-align: center;
+}
+
+.gift-block .gift-list .gift-item .number {
+    color: red;
+}
+
+

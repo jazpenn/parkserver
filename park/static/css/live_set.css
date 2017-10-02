@@ -1,0 +1,72 @@
+.profile-block {
+    font-size: 18px;
+    background-color: #d8d8d8;
+    color: #fff;
+    height: 55px;
+    line-height: 55px;
+}
+
+.label-container {
+    border-bottom: 1px solid rgba(78, 78, 78, 0.31);
+    line-height: 60px;
+    height: 62px;
+    margin-bottom: 30px;
+}
+
+.label-container .label-item {
+    font-size: 16px;
+    cursor: pointer;
+    color: #222;
+}
+
+.label-container .label-item.active {
+    border-bottom: 3px solid #ef3123;
+}
+
+.profile-edit-block {}
+
+.profile-edit-block label {
+    font-size: 16px;
+}
+
+.profile-edit-block .change-nick-name .button {
+    background-color: #eeeeee;
+    font-size: 16px;
+    color: #3e3e3e;
+    padding-top: 8px;
+    padding-bottom: 9px;
+}
+
+.profile-edit-block .change-nick-name.active .button {
+    background-color: #ef3123;
+    color: #fff;
+}
+
+.avatar-block label .avatar {
+    height: 40px;
+    width: 40px;
+    margin-right: 6px;
+}
+
+.avatar-block label .words {
+    line-height: 40px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.pay-block .pay-number {
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.pay-block .pay-number .number {
+    color: #ef3123;
+}
+
+.pay-block .pay-number .icon {
+    color: #ef3123;
+}
+
+.pay-block .live-charge {
+    text-decoration: underline;
+}

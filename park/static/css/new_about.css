@@ -1,0 +1,27 @@
+
+#main_board {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#main_board #main_nav li {}
+
+#main_board #main_nav li.active {
+	border-left: 2px solid #f06;
+}
+
+.new_tag {
+    margin-bottom: 10px!important;
+    font-size: 16px;
+}
+
+.new_tag .fa {
+	line-height: 30px!important;
+    font-size: 16px !important;
+}
+
+#main_board .content_board .content {
+	line-height: 27px;
+}

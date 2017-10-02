@@ -1,0 +1,585 @@
+body {
+  max-width: 768px;
+  margin: 0 auto;
+  padding-top: 45px;
+}
+
+.wrapper {
+  background: #fff;
+  z-index: 88;
+  height: 100%;
+  overflow: auto;
+}
+
+.m-header {
+  background: #000;
+  border-bottom: 2px solid $brand;
+  padding: 0 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 88;
+  h1 {
+    display: inline-block;
+    a {
+      background-image: url('../images/logo2.png');
+      background-size: 100%;
+      background-position: left center;
+      background-repeat: no-repeat;
+      display: block;
+      text-indent: -2000em;
+      width: 120px;
+      margin-top: 0.4rem;
+    }
+  }
+  ul.nav-header {
+    float: right;
+    li {
+      display: inline-block;
+      width: 40px;
+      text-align: right;
+      a {
+        height: 30px;
+        line-height: 30px;
+        color: #999;
+        display: inline-block;
+        font-size: 1.4rem;
+        border: 1px solid #999;
+        width: 30px;
+        border-radius: 50%;
+        text-align: center;
+        margin-top: 5px;
+        i {
+          line-height: 28px;
+        }
+        &:hover {
+          color: #fff;
+        }
+      }
+      &.current {
+        a {
+          color: $brand;
+          border-color: $brand;
+        }
+      }
+    }
+  }
+}
+
+.download-note {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  line-height: 48px;
+  font-size: 1.6rem;
+  overflow: hidden;
+  .download-note-wrapper {
+    position: relative;
+    padding: 6px 10px;
+    .download-icon {
+      width:48px;
+      height: 48px;
+      float: left;
+      margin-right: -60px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .download-line {
+      float: left;
+      margin-left: 60px;
+    }
+    .download-btn {
+      float: right;
+      margin-top: 10px;
+      margin-right: 42px;
+    }
+    a.btn-close {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: tranparent;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 1.8rem;
+      text-align: center;
+      line-height: 28px;
+      position: absolute;
+      right: 10px;
+      top: 14px;
+    }
+  }
+}
+
+.home-featured {
+  .item {
+    position: relative;
+    h2 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      font-size: 1.6rem;
+      font-weight: normal;
+      a {
+        color: #fff;
+        padding: 10px;
+        display: block;
+      }
+    }
+  }
+  .owl-controls {
+    .owl-nav {
+      display: none;
+    }
+    .owl-dots {
+      position: absolute;
+      right: 10px;
+      bottom: 16px;
+      .owl-dot {
+        width: 8px;
+        height: 8px;
+        margin-left: 5px;
+        display: inline-block;
+        span {
+          display: block;
+          height: 8px;
+          background: #ccc;
+        }
+        &.active {
+          span {
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-section {
+  margin: 2rem 0;
+  padding: 0 10px;
+  font-size: 1.4rem;
+  h3 {
+    font-size: 1.6rem;
+    overflow: hidden;
+    border-left: 4px solid $brand;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+    .section-title {
+
+    }
+    a.section-more {
+      float: right;
+      font-size: 1.4rem;
+      font-weight: normal;
+    }
+  }
+  .section-content {
+
+  }
+}
+
+
+$player-size: 1.4rem;
+$player-height: 1.72;
+$player-lines-to-show: 1;
+
+.player-list {
+  margin-left: -5px;
+  .player {
+    padding: 0 5px;
+    .player-wrapper {
+      text-align: center;
+      position: relative;
+      .player-avatar {
+
+      }
+      h4 {
+        font-size: 1.4rem;
+        margin: 5px 0;
+      }
+      p {
+        font-size: 1.2rem !important;
+        color: #999;
+      }
+      h4, p {
+        display: -webkit-box;
+        height: $player-size*$player-height*$player-lines-to-show;
+        font-size: $player-size;
+        line-height: $player-height;
+        -webkit-line-clamp: $player-lines-to-show;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      span.live-sign {
+        padding: 2px 5px;
+        background: $brand;
+        color: #333;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.0rem;
+      }
+    }
+  }
+}
+
+.video-list {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  overflow: hidden;
+  .video {
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+    width: 50%;
+    float: left;
+    .video-wrapper {
+      .video-cover {
+        backgrund-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 120px;
+        position: relative;
+        a.video-link {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          text-indent: -2000em;
+        }
+        .video-meta {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 5px 10px;
+          overflow: hidden;
+          background: rgba(0,0,0,0.6);
+          h4 {
+            width: 60%;
+            float: left;
+            font-weight: normal;
+            font-size: 1.4rem;
+            a {
+              display: -webkit-box;
+              height: $player-size*$player-height*$player-lines-to-show;
+              font-size: $player-size;
+              line-height: $player-height;
+              -webkit-line-clamp: $player-lines-to-show;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              color: #fff;
+            }
+          }
+          span.video-viewers {
+            float: right;
+            color: #fff;
+            margin-top: 5px;
+          }
+        }
+        span.live-sign {
+          padding: 2px 5px;
+          background: $brand;
+          color: #333;
+          display: inline-block;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          font-size: 1.0rem;
+        }
+      }
+      .video-player {
+        overflow: hidden;
+        padding: 5px 0;
+        img.avatar {
+          width: 32px;
+          height: 32px;
+          float: left;
+          margin-right: -40px;
+        }
+        span.player-name {
+          margin-left: 40px;
+          line-height: 32px;
+          font-size: 1.2rem;
+          height: 32px;
+          overflow: hidden;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.living-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+.living-tabs {
+  border: none;
+  font-size: 1.4rem;
+  li {
+    width: 25%;
+    border: none;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    a, a:hover {
+      border: none;
+      border-bottom: 2px solid transparent;
+      margin: 0;
+      padding: 0;
+      display: block;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      background: #000;
+      color: #fff;
+      border-radius: 0;
+    }
+    &.active {
+      border: none;
+      background: #000;
+      color: #fff;
+      a, a:hover {
+        border: none;
+        background: #000;
+        color: #fff;
+        border-bottom: 2px solid $brand;
+      }
+    }
+  }
+}
+
+.living-content {
+  overflow: hidden;
+  .tab-pane {
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+.video-player-banner {
+  background: #fff;
+  position: relative;
+  height: 80px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 2rem;
+  .video-avatar {
+    width: 6rem;
+    height: 6rem;
+    float: left;
+    margin-right: -7rem;
+  }
+  .video-info {
+    margin-left: 7rem;
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+      line-height: 3rem;
+      span {
+        display: inline-block;
+      }
+      span.video-game {
+        font-size: 1.2rem;
+        margin-top: -5px;
+        margin-left: 2rem;
+        display: inline-block;
+        vertical-align: middle;
+        a {
+          background: $brand;
+          color: #333;
+          height: 24px;
+          line-height: 24px;
+          display: inline-block;
+          padding-right: 10px;
+          i {
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            border-right: 1px solid $brand - #111;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .video-meta {
+      .video-action {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.chat-section {
+  margin: 0;
+  padding: 0;
+}
+.chat-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  .chat-list {
+    width: 100%;
+    flex: 1 1 100%;
+    overflow: auto;
+    font-size: 1.4rem;
+    padding: 5px 0;
+    position: relative;
+    .chat-list-inner {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .bubble {
+      clear: both;
+      padding: 5px 10px;
+      line-height: 3rem;
+      &.player {
+        color: #ec3e3e;
+        .sender {
+          color: #ec3e3e;
+          padding-left: 4.4rem;
+          background-image: url('../images/chat_host.png');
+          background-size: 4rem;
+          background-repeat: no-repeat;
+          background-position: left center;
+          line-height: 3rem;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        span.msg {
+          line-height: 3rem;
+          color: #ec3e3e;
+        }
+      }
+      &.mine {
+        .sender {
+          color: #ec3e3e;
+
+        }
+      }
+      span.sender {
+        color: #1091dc;
+        line-height: 2rem;
+
+      }
+      span.msg {
+        color: #333;
+        line-height: 2rem;
+        word-break: break-all;
+      }
+    } /* clear the floats here on parent */
+  }
+  .chat-input-field {
+    height: 60px;
+    width: 100%;
+    flex: 0 0 60px;
+    display: flex;
+    position: relative;
+    .error-note {
+      position: absolute;
+      width: 100%;
+      bottom: 100%;
+      padding: 10px;
+      font-size: 1.4rem;
+      span {
+        background: rgba(0,0,0,0.8);
+        color: #fff;
+        border-radius: 10px;
+        display: block;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+    input[type=text] {
+      flex: 1 1 auto;
+      border: 1px solid #eee;
+      padding: 0 1rem;
+      border-left: none;
+      border-right: none;
+    }
+    button {
+      flex: 0 0 20%;
+      border: 1px solid #ec3e3e;
+      background: #ec3e3e;
+      color: #fff;
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.board-list {
+  padding: 0;
+  font-size: 1.4rem;
+  li {
+    line-height: 24px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e8e8e8;
+    .player-rate {
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      text-align: center;
+      border-radius: 3px;
+      background: #999;
+      color: #fff;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    .player-info {
+      line-height: 24px;
+      vertical-align: middle;
+    }
+    .player-karma {
+      float: right;
+      background-image: url('../images/wan_coin.png');
+      background-size: 18px;
+      background-position: right center;
+      background-repeat: no-repeat;
+      padding-right: 20px;
+    }
+    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+      .player-rate {
+        background-color: transparent;
+        background-size: 18px;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-indent: -2000em;
+        height: 24px;
+      }
+      .player-info {
+        color: #ec3e3e;
+      }
+    }
+    &:nth-child(1) {
+      .player-rate {
+        background-image: url('../images/upstart_au.png');
+      }
+    }
+    &:nth-child(2) {
+      .player-rate {
+        background-image: url('../images/upstart_ag.png');
+      }
+    }
+    &:nth-child(3) {
+      .player-rate {
+        background-image: url('../images/upstart_cu.png');
+      }
+    }
+  }
+}
